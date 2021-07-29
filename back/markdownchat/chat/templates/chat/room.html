@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+</head>
+
+<body>
+    <textarea name="" id="chat-history-textarea" cols="41" rows="33" readonly></textarea><br><br>
+    <form id="message-form">
+        <input type="text" id="chat-message-input" size="39" autofocus><br><br>
+        <input type="button" value="Send message" id="chat-message-submit">
+    </form>
+
+    {{ room_name|json_script:"room-name" }}
+    {{ username|json_script:"username" }}
+
+    <script>
+        const roomName = JSON.parse(document.querySelector('#room-name').textContent);
+        const username = JSON.parse(document.querySelector('#username').textContent);
+
+        const onOpen = (e) => {
+            socket.send(
+                JSON.stringify({ 'message': `event: ${username} has entered` })
+            )
+        }
+
+        const onMessage = (e) => {
+            const data = JSON.parse(e.data);
+            document.querySelector('#chat-history-textarea').value += `${data.message}\n`;
+        }
+
+        const onClose = (e) => {
+            console.log('Socket was closed unexpectedly');
+        }
+
+        const socket = new WebSocket(`ws://${window.location.host}/ws/chat/${roomName}/`);
+
+        socket.onmessage = onMessage;
+        socket.onclose = onClose;
+        socket.onopen = onOpen;
+
+        document.querySelector('#chat-message-input').focus();
+
+        const roomSubmitHandler = () => {
+            const messageInput = document.querySelector('#chat-message-input');
+            const message = messageInput.value;
+
+            socket.send(JSON.stringify({ 'message': `${username} says: ${message}` }))
+
+            messageInput.value = '';
+            messageInput.focus();
+        }
+
+        document.querySelector('#chat-message-submit').onclick = roomSubmitHandler;
+
+        document.querySelector('#message-form').onsubmit = (event) => {
+            event.preventDefault();
+            roomSubmitHandler();
+        }
+
+    </script>
+</body>
+
+</html>

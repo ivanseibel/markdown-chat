@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Real Time Chat Room</title>
+</head>
+
+<body>
+    <h3>Choose a chat room to enter</h3>
+    <input type="text" id="room-name-input" autofocus><br><br>
+    <input type="text" id="username-input"><br><br>
+    <input type="button" id="room-name-submit" value="Click to enter">
+
+
+    <script>
+        const roomSubmitHandler = () => {
+            const roomName = document.querySelector('#room-name-input').value;
+            const username = document.querySelector('#username-input').value;
+            window.location.pathname = `/chat/${roomName}/?username=${username}`;
+        };
+
+        document.querySelector('#room-name-submit').onclick = roomSubmitHandler;
+    </script>
+</body>
+
+</html>
