@@ -1,4 +1,34 @@
-div {
+div.chat-room-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  height: 99vh;
+}
+
+div.chat-room-header-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+div.signed-room-div {
+  display: flex;
+  flex: 1;
+}
+
+div.leave-room-div {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+input.leave-room-button {
+  font-size: 16px;
   padding: 5px;
 }
 
@@ -7,6 +37,8 @@ div.message-container {
   display: flex;
   flex-direction: row;
   flex: 1;
+  height: 80vh;
+  border-radius: 4px;
 }
 
 ul {
@@ -16,23 +48,29 @@ ul {
 }
 
 div.users-list-container {
-  border: 1px solid black;
-  border-radius: 4px;
+  border-right: 1px solid black;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  min-width: 100px;
+  padding: 5px;
+  height: 100%;
+}
+
+li.username-list-item:not(:nth-child(1)) {
+  margin-top: 5px;
 }
 
 div.message-list-container {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-left: 5px;
+  padding: 15px 30px;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 .message-item {
   display: flex;
-  /* border: 1px solid black; */
   flex-direction: column;
   align-items: flex-start;
 }
@@ -42,18 +80,65 @@ div.message-list-container {
 }
 
 .message-box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 15px;
   border-top-left-radius: 0;
   padding: 10px;
   margin-top: 5px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: antiquewhite;
 }
 
 .me {
   border-radius: 15px;
   border-top-right-radius: 0;
+  background-color: aqua;
+}
+
+p.message-time {
+  color: gray;
+  font-size: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .message-item:not(:first-child) {
   margin-top: 15px;
+}
+
+input.leave-room {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+div.chat-room-bottom-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 10px;
+  align-items: center;
+}
+
+div.chat-room-message-container {
+  display: flex;
+  flex: 1;
+}
+
+input.chat-room-message-input {
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+div.chat-room-send-button-container {
+  display: flex;
+}
+
+input.send-message-button {
+  font-size: 16px;
+  padding: 5px;
 }

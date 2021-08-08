@@ -1,6 +1,9 @@
 import React, { useCallback, useState, useMemo, useRef, useContext } from 'react';
+import { format } from 'date-fns';
 
 import { RoomContext } from '../../../context';
+
+
 
 import './styles.css';
 
@@ -34,14 +37,26 @@ export function Room() {
   }, [handleSendMessage, message])
 
   return (
-    <>
-      <span>Signed room: {signedRoom}</span><br /><br />
+    <div className="chat-room-container">
+      <div className="chat-room-header-container">
+        <div className="signed-room-div">
+          <h3>Signed room: {signedRoom}</h3>
+        </div>
+        <div className="leave-room-div">
+          <input
+            type="button"
+            value={connectButtonText}
+            id="chat-connect"
+            onClick={handleConnect}
+            className="leave-room-button"
+          />
+        </div>
+      </div>
       <div className="message-container">
         <div className="users-list-container">
-          <h4>Users</h4>
           <ul>
             {usersList.map((item, index) => (
-              <li key={index.toString()}>{item.username}</li>
+              <li className="username-list-item" key={index.toString()}>{item.username}</li>
             ))}
           </ul>
         </div>
@@ -50,46 +65,50 @@ export function Room() {
             {messageHistory.map((item, index) => {
               const messageItemClass = item.username === signedUser ? "message-item right" : "message-item";
               const messageBoxClass = item.username === signedUser ? "message-box me" : "message-box";
+              const time = format(new Date(), 'MM/dd/yyyy HH:mm');
+
               return (
                 <li className={messageItemClass} key={index.toString()}>
-                  <span>{item.username}</span>
-                  <span className={messageBoxClass}>{item.message}</span>
+                  <strong>{item.username}</strong>
+                  <div className={messageBoxClass}>
+                    <p>{item.message}</p>
+                    <p className="message-time">{time}</p>
+                  </div>
                 </li>
               );
             })}
           </ul>
         </div>
       </div>
-      <br />
-      <input
-        ref={messageInputRef}
-        onChange={handleOnChange}
-        value={message}
-        type="text"
-        id="chat-message-input"
-        size="39"
-        placeholder="message"
-        onKeyDown={handleMessageInputKeyDown}
-      />
-      <br /><br />
-      <input
-        type="button"
-        value="Send message"
-        id="chat-message-submit"
-        onClick={() => {
-          handleSendMessage(message);
-          setMessage('');
-          messageInputRef.current.focus();
-        }}
-        disabled={!isConnected}
-      />
-      <br /><br /><br />
-      <input
-        type="button"
-        value={connectButtonText}
-        id="chat-connect"
-        onClick={handleConnect}
-      />
-    </>
+      <div className="chat-room-bottom-container" onChange={(e) => { e.preventDefault() }} >
+        <div className="chat-room-message-container">
+          <input
+            ref={messageInputRef}
+            onChange={handleOnChange}
+            value={message}
+            type="text"
+            id="chat-message-input"
+            size="39"
+            placeholder="message"
+            onKeyDown={handleMessageInputKeyDown}
+            className="chat-room-message-input"
+          />
+        </div>
+        <div className="chat-room-send-button-container">
+          <input
+            type="button"
+            value="Send message"
+            id="chat-message-submit"
+            onClick={() => {
+              handleSendMessage(message);
+              setMessage('');
+              messageInputRef.current.focus();
+            }}
+            disabled={!isConnected}
+            className="send-message-button"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
