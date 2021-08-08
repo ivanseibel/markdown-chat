@@ -12,7 +12,7 @@ div.chat-room-header-container {
   align-items: center;
   padding: 10px;
   margin: 15px 0;
-  border: 1px solid black;
+  border: 1px solid #CAD5CA;
   border-radius: 4px;
 }
 
@@ -29,11 +29,23 @@ div.leave-room-div {
 
 input.leave-room-button {
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: darkred;
+  color: white;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+input.leave-room-button:hover {
+  opacity: 1;
 }
 
 div.message-container {
-  border: 1px solid black;
+  border: 1px solid #CAD5CA;
   display: flex;
   flex-direction: row;
   flex: 1;
@@ -48,17 +60,26 @@ ul {
 }
 
 div.users-list-container {
-  border-right: 1px solid black;
+  border-right: 1px solid #CAD5CA;
   display: flex;
   flex-direction: column;
-  min-width: 100px;
-  padding: 5px;
+  min-width: 200px;
+  padding: 10px;
   height: 100%;
+  box-shadow: 1px 0px 5px #CAD5CA;
 }
 
-li.username-list-item:not(:nth-child(1)) {
-  margin-top: 5px;
+li.username-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #CAD5CA;
 }
+
+/* li.username-list-item:not(:nth-child(1)) { */
+  /* margin-top: 5px; */
+  /* border: 1px solid gray; */
+/* } */
 
 div.message-list-container {
   display: flex;
@@ -80,7 +101,6 @@ div.message-list-container {
 }
 
 .message-box {
-  /* border: 1px solid black; */
   border-radius: 15px;
   border-top-left-radius: 0;
   padding: 10px;
@@ -115,7 +135,7 @@ input.leave-room {
 div.chat-room-bottom-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid #CAD5CA;
   border-radius: 4px;
   margin-top: 15px;
   padding: 10px;
@@ -140,5 +160,19 @@ div.chat-room-send-button-container {
 
 input.send-message-button {
   font-size: 16px;
-  padding: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+  opacity: 0.6;
+  transition: 0.3s;
 }
+
+input.send-message-button:hover {
+  opacity: 1;
+}
+
+

@@ -40,7 +40,7 @@ export function Room() {
     <div className="chat-room-container">
       <div className="chat-room-header-container">
         <div className="signed-room-div">
-          <h3>Signed room: {signedRoom}</h3>
+          <h3>Room: {signedRoom}</h3>
         </div>
         <div className="leave-room-div">
           <input
@@ -89,7 +89,7 @@ export function Room() {
             type="text"
             id="chat-message-input"
             size="39"
-            placeholder="message"
+            placeholder="Type a message"
             onKeyDown={handleMessageInputKeyDown}
             className="chat-room-message-input"
           />
