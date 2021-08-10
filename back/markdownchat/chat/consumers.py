@@ -1,9 +1,35 @@
+import sys
+from chat.models import SignedUser
+from channels.db import database_sync_to_async
 import json
 from channels.generic.websocket import AsyncWebsocketConsumer
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
-    users = []
+    @database_sync_to_async
+    def get_users_list(self):
+        users = SignedUser.objects.filter(room=self.room_name).values()
+        return list(users)
+
+    @database_sync_to_async
+    def get_user(self):
+        return SignedUser.objects.filter(
+            username=self.username,
+            room=self.room_name,
+        ).first()
+
+    @database_sync_to_async
+    def add_user(self):
+        SignedUser.objects.create(
+            username=self.username,
+            room=self.room_name,
+            channel_name=self.channel_name,
+        )
+
+    @database_sync_to_async
+    def remove_user(self):
+        SignedUser.objects.filter(
+            username=self.username, room=self.room_name).delete()
 
     async def connect(self):
         # Get data from route to identify room name and username
@@ -11,16 +37,22 @@ class ChatConsumer(AsyncWebsocketConsumer):
         self.username = self.scope['url_route']['kwargs']['username']
         self.room_group_name = 'chat_%s' % self.room_name
 
+        # user = await self.get_user(username=self.username, room_name=self.room_name)
+        user = await self.get_user()
+
+        # If found, refuse connection
+        if (user):
+            await self.close()
+            return
+
+        await self.add_user()
+
         # Join room group
         await self.channel_layer.group_add(
             self.room_group_name,
             self.channel_name
         )
         await self.accept()
-
-        # Add new user to users list
-        self.users.append(
-            {"room": self.room_name, "username": self.username, "channel_name": self.channel_name})
 
         # Send message to room group
         message = f"{self.username} entered the room"
@@ -34,6 +66,20 @@ class ChatConsumer(AsyncWebsocketConsumer):
         )
 
     async def disconnect(self, close_code):
+        # Remove disconnected from the users list
+        await self.remove_user()
+
+        # Send message to room group
+        message = f"{self.username} left the room"
+        await self.channel_layer.group_send(
+            self.room_group_name,
+            {
+                'type': 'chat_leave_room',
+                'message': message,
+                'username': self.username,
+            }
+        )
+
         # Leave room group
         await self.channel_layer.group_discard(
             self.room_group_name,
@@ -41,6 +87,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         )
 
     # Receive message from WebSocket
+
     async def receive(self, text_data):
         text_data_json = json.loads(text_data)
         message = text_data_json['message']
@@ -63,45 +110,44 @@ class ChatConsumer(AsyncWebsocketConsumer):
         username = event['username']
         type = event['type']
 
+        users = await self.get_users_list()
+
         # Send message to WebSocket
         await self.send(text_data=json.dumps({
             'message': message,
             'username': username,
             'type': type,
-            'users': self.users,
+            'users': users,
         }))
 
     # User leave room
     async def chat_leave_room(self, event):
         username = event['username']
         type = event['type']
+        message = event['message']
 
-        message = f"{username} left the room"
-
-        users = filter(lambda c: c["username"] != username, self.users)
-        self.users = list(users)
+        users = await self.get_users_list()
 
         # Send message to WebSocket
         await self.send(text_data=json.dumps({
             'message': message,
             'username': username,
             'type': type,
-            'users': self.users
+            'users': users
         }))
 
     # User enter room
     async def chat_enter_room(self, event):
         username = event['username']
         type = event['type']
-        # message = f"{username} entered the room"
         message = event['message']
 
-        users = filter(lambda c: c["room"] == self.room_name, self.users)
+        users = await self.get_users_list()
 
         # Send message to WebSocket
         await self.send(text_data=json.dumps({
             'message': message,
             'username': username,
             'type': type,
-            'users': list(users)
+            'users': users
         }))

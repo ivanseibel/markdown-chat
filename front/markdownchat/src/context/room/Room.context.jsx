@@ -15,6 +15,8 @@ export const RoomProvider = ({ children }) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
 
+    console.log(data);
+
     const newMessageHistory = [...messageHistory, { message, username }];
 
     setUserList(users);
