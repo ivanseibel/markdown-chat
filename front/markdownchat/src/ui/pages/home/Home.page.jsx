@@ -1,5 +1,8 @@
 import React, { useState, useCallback, useMemo, useContext } from 'react';
 import { RoomContext } from '../../../context';
+import { FiLogIn } from 'react-icons/fi';
+
+import './styles.css';
 
 export function Home() {
   // TODO: send a message saying that user just has connected
@@ -7,7 +10,7 @@ export function Home() {
   // TODO: convert markdown to html
   // TODO: create environment variables to manage urls and other similar info
   // TODO: avoid duplicated username
-  const { isConnected, connectionStatus, messageHistory, handleConnect } = useContext(RoomContext);
+  const { isConnected, handleConnect } = useContext(RoomContext);
   const [username, setUsername] = useState('');
   const [room, setRoom] = useState('');
 
@@ -26,16 +29,9 @@ export function Home() {
     }
   }, []);
 
-  const connectButtonText = useMemo(() => {
-    return isConnected ? 'Leave room' : 'Enter room';
-  }, [isConnected])
-
   return (
-    <>
-      <span>Socket status: {connectionStatus}</span>
-      <ul>
-        {messageHistory.map((item, index) => <li key={index.toString()}>{item.message}</li>)}
-      </ul>
+    <div className="main">
+      <h1 className="login-title">Markdown Chat</h1>
       <input
         onChange={handleOnChange}
         value={username}
@@ -45,6 +41,7 @@ export function Home() {
         autoFocus
         placeholder="username"
         disabled={isConnected}
+        className="fields"
       />
       <br /><br />
       <input
@@ -55,15 +52,21 @@ export function Home() {
         size="39"
         placeholder="room"
         disabled={isConnected}
+        className="fields"
       />
       <br /><br />
-      <input
-        type="button"
-        value={connectButtonText}
-        id="chat-connect"
-        onClick={() => { handleConnect(username, room) }}
-        disabled={username.length === 0 || room.length === 0}
-      />
-    </>
+      <div className="enter-room-button-container">
+        <input
+          type="button"
+          value="Enter Room"
+          id="chat-connect"
+          onClick={() => { handleConnect(username, room) }}
+          disabled={username.length === 0 || room.length === 0}
+          className="enter-room-button"
+        />
+        <FiLogIn className="logout-icon" size={20} />
+      </div>
+
+    </div>
   );
 }

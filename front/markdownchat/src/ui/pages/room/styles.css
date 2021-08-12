@@ -1,13 +1,12 @@
 div.chat-room-container {
   display: flex;
-  flex-direction: column;
   padding: 0 15px;
-  height: 99vh;
+  flex-flow: column;
+  height: 100%;
 }
 
 div.chat-room-header-container {
   display: flex;
-  width: 100%;
   flex-direction: row;
   align-items: center;
   padding: 10px;
@@ -27,33 +26,50 @@ div.leave-room-div {
   justify-content: flex-end;
 }
 
-input.leave-room-button {
-  font-size: 16px;
+div.leave-room-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 5px 10px;
-  border: none;
   background-color: darkred;
-  color: white;
   height: 50px;
   border-radius: 4px;
-  font-weight: 700;
-  opacity: 0.7;
+  width: 100px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-input.leave-room-button:hover {
-  opacity: 1;
+div.leave-room-button-container:hover {
+  opacity: 0.7;
 }
+
+input.leave-room-button {
+  font-size: 16px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background-color: darkred;
+  margin-right: 10px;
+  cursor: pointer;
+  height: 40px;
+}
+
+svg.logout-icon {
+  color: white;
+}
+
 
 div.message-container {
   border: 1px solid #CAD5CA;
   display: flex;
   flex-direction: row;
-  flex: 1;
-  height: 80vh;
   border-radius: 4px;
+  flex: 1;
+  height: 60%;
 }
 
-ul {
+ul.layout-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -75,11 +91,6 @@ li.username-list-item {
   padding: 10px;
   border-bottom: 1px solid #CAD5CA;
 }
-
-/* li.username-list-item:not(:nth-child(1)) { */
-  /* margin-top: 5px; */
-  /* border: 1px solid gray; */
-/* } */
 
 div.message-list-container {
   display: flex;
@@ -107,6 +118,7 @@ div.message-list-container {
   margin-top: 5px;
   box-shadow: 5px 5px 5px gray;
   background-color: antiquewhite;
+  max-width: 50%;
 }
 
 .me {
@@ -137,7 +149,7 @@ div.chat-room-bottom-container {
   flex-direction: row;
   border: 1px solid #CAD5CA;
   border-radius: 4px;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 10px;
   align-items: center;
 }
@@ -147,32 +159,52 @@ div.chat-room-message-container {
   flex: 1;
 }
 
-input.chat-room-message-input {
+textarea.chat-room-message-input {
+  font: 16px 'Roboto', sans-serif;
   border: none;
-  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
   margin-right: 10px;
+  height: 50px;
+  /* height: auto; */
+  overflow: hidden;
+  padding: 16px;
+  resize: none;
 }
 
 div.chat-room-send-button-container {
   display: flex;
 }
 
+div.send-message-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(8, 87, 14);
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+  width: 100px;
+  cursor: pointer;
+}
+
+div.send-message-button-container:hover {
+  opacity: 0.7;
+}
+
 input.send-message-button {
   font-size: 16px;
-  padding: 5px 10px;
   border: none;
-  background-color: black;
+  background-color: rgb(8, 87, 14);
   color: white;
-  height: 50px;
-  border-radius: 4px;
+  height: 40px;
   font-weight: 700;
-  opacity: 0.6;
-  transition: 0.3s;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-input.send-message-button:hover {
-  opacity: 1;
+svg.send-icon {
+  color: white;
 }
-
-
