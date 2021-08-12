@@ -2,7 +2,7 @@ import { createContext, useState, useCallback } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 
 export const RoomContext = createContext({});
-const SOCKET_URL = 'ws://127.0.0.1:8000/ws/chat';
+const SOCKET_URL = 'wss://8ca913030d50.ngrok.io/ws/chat';
 
 export const RoomProvider = ({ children }) => {
   const [messageHistory, setMessageHistory] = useState([]);
