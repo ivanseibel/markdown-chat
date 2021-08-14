@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useRef, useContext, useEffect } from 'react';
 import { format } from 'date-fns';
 import ReactMarkdown from 'react-markdown'
-import { FiLogOut, FiSend } from 'react-icons/fi';
+import { FiLogOut, FiSend, FiMenu } from 'react-icons/fi';
 
 import { RoomContext } from '../../../context';
 
