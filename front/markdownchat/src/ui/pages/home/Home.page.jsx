@@ -5,11 +5,6 @@ import { FiLogIn } from 'react-icons/fi';
 import './styles.css';
 
 export function Home() {
-  // TODO: send a message saying that user just has connected
-  // TODO: create interface to display messages
-  // TODO: convert markdown to html
-  // TODO: create environment variables to manage urls and other similar info
-  // TODO: avoid duplicated username
   const { isConnected, handleConnect } = useContext(RoomContext);
   const [username, setUsername] = useState('');
   const [room, setRoom] = useState('');
