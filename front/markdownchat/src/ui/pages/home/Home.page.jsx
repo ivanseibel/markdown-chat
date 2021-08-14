@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useMemo, useContext } from 'react';
+import React, { useState, useCallback, useContext } from 'react';
 import { RoomContext } from '../../../context';
 import { FiLogIn } from 'react-icons/fi';
 
