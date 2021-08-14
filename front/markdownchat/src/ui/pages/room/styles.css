@@ -3,6 +3,8 @@ div.chat-room-container {
   padding: 0 15px;
   flex-flow: column;
   height: 100%;
+  opacity: 1;
+  background-color: white;
 }
 
 div.chat-room-header-container {
@@ -59,7 +61,6 @@ svg.logout-icon {
   color: white;
 }
 
-
 div.message-container {
   border: 1px solid #CAD5CA;
   display: flex;
@@ -69,20 +70,16 @@ div.message-container {
   height: 60%;
 }
 
-ul.layout-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-}
-
 div.users-list-container {
   border-right: 1px solid #CAD5CA;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
+  width: 200px;
   padding: 10px;
   height: 100%;
   box-shadow: 1px 0px 5px #CAD5CA;
+  background-color: cornflowerblue;
+  transition: 1s;
 }
 
 li.username-list-item {
@@ -96,19 +93,44 @@ div.message-list-container {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 15px 30px;
+  padding: 15px 10px 15px 15px;
+}
+
+/* div.message-list-container-header {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+} */
+
+ul.layout-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
   overflow: auto;
   scroll-behavior: smooth;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+ul.layout-list::-webkit-scrollbar {
+  display: none;
 }
 
 .message-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 5px;
 }
 
 .right {
   align-items: flex-end;
+  margin-right: 5px;
 }
 
 .message-box {
@@ -139,10 +161,10 @@ p.message-time {
   margin-top: 15px;
 }
 
-input.leave-room {
+/* input.leave-room {
   margin-left: 15px;
   padding: 5px;
-}
+} */
 
 div.chat-room-bottom-container {
   display: flex;
@@ -207,4 +229,19 @@ input.send-message-button {
 
 svg.send-icon {
   color: white;
+}
+
+
+@media (max-width: 600px)
+{
+  div.users-list-container {
+    overflow-x: hidden;
+    transition: 1s;
+    width: 0;
+    z-index: -100;
+  }
+
+  div.message-list-container {
+    margin-left: -25px;
+  }
 }

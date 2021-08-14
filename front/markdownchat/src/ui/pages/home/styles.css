@@ -5,6 +5,7 @@ div.main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 80%;
 }
 
 h1.login-title {
