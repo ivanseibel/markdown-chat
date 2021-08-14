@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useMemo, useRef, useContext, useEffect } from 'react';
+import React, { useCallback, useState, useRef, useContext, useEffect } from 'react';
 import { format } from 'date-fns';
 import ReactMarkdown from 'react-markdown'
 import { FiLogOut, FiSend } from 'react-icons/fi';
