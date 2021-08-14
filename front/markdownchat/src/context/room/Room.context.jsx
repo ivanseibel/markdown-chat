@@ -2,7 +2,8 @@ import { createContext, useState, useCallback } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 
 export const RoomContext = createContext({});
-const SOCKET_URL = 'wss://8ca913030d50.ngrok.io/ws/chat';
+
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL;
 
 export const RoomProvider = ({ children }) => {
   const [messageHistory, setMessageHistory] = useState([]);
@@ -14,8 +15,6 @@ export const RoomProvider = ({ children }) => {
   const onMessageHandler = useCallback((event) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
-
-    console.log(data);
 
     const newMessageHistory = [...messageHistory, { message, username }];
 
