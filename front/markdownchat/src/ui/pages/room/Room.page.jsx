@@ -66,7 +66,10 @@ export function Room() {
           </ul>
         </div>
         <div className="message-list-container">
-          <ul className="layout-list">
+          <div className="message-list-container-header" >
+            <FiMenu className="menu-icon" size={20} />
+          </div>
+          <ul className="layout-list" id="messages-container">
             {messageHistory.map((item, index) => {
               const messageItemClass = item.username === signedUser ? "message-item right" : "message-item";
               const messageBoxClass = item.username === signedUser ? "message-box me" : "message-box";
