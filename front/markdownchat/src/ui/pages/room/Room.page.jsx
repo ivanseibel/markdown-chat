@@ -21,7 +21,7 @@ export function Room() {
   const messageInputRef = useRef(null);
 
   useEffect(() => {
-    const messageContainer = document.getElementsByClassName('message-list-container')[0];
+    const messageContainer = document.getElementById('messages-container');
     messageContainer.scrollTop = messageContainer.scrollHeight;
   }, [messageHistory]);
 
