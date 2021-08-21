@@ -1,4 +1,4 @@
-<h1 align="center" styles="background-color: #fff">
+<h1 align="center">
     <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/logo.png?raw=true" width="200px" />
     <p>Project: Markdown Chat</p>
 </h1>
