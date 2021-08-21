@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/logo.png?raw=true" width="200px" />
+</h1>
+
 # Markdown Chat
 
 A real-time webchat that accepts Markdown syntax in messages sent by users.
