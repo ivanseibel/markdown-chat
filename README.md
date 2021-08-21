@@ -6,7 +6,9 @@
     <p>Project: Markdown Chat</p>
 </h2>
 
-A real-time webchat that accepts Markdown syntax in messages sent by users.
+<p align="center">
+    A real-time webchat that accepts Markdown syntax in messages sent by users.
+</p>
 
 # Motivations
 
