@@ -3,22 +3,22 @@ div.chat-room-container {
   padding: 0 15px;
   flex-flow: column;
   height: 100%;
-  opacity: 1;
-  background-color: white;
+  background-color: #E5EEDA;
 }
 
 div.chat-room-header-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   margin: 15px 0;
-  border: 1px solid #CAD5CA;
   border-radius: 4px;
 }
 
 div.signed-room-div {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -28,33 +28,21 @@ div.leave-room-div {
   justify-content: flex-end;
 }
 
-div.leave-room-button-container {
+.leave-room-button {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 5px 10px;
-  background-color: darkred;
-  height: 50px;
-  border-radius: 4px;
-  width: 100px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-div.leave-room-button-container:hover {
-  opacity: 0.7;
-}
-
-input.leave-room-button {
-  font-size: 16px;
   border: none;
-  color: white;
-  font-weight: 700;
-  background-color: darkred;
-  margin-right: 10px;
+  border-radius: 4px;
+  background-color: #BC3325;
   cursor: pointer;
-  height: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.leave-room-button:hover {
+  opacity: 0.7;
 }
 
 svg.logout-icon {
@@ -71,14 +59,13 @@ div.message-container {
 }
 
 div.users-list-container {
-  border-right: 1px solid #CAD5CA;
   display: flex;
   flex-direction: column;
   width: 200px;
   padding: 10px;
   height: 100%;
-  box-shadow: 1px 0px 5px #CAD5CA;
-  background-color: cornflowerblue;
+  background-color: #CADDB4;
+  opacity: 0.6;
   transition: 1s;
 }
 
@@ -86,7 +73,9 @@ li.username-list-item {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #CAD5CA;
+  /* border-bottom: 1px solid #E7B488; */
+  color: black;
+  font-weight: 600;
 }
 
 div.message-list-container {
@@ -136,21 +125,26 @@ ul.layout-list::-webkit-scrollbar {
 .message-box {
   border-radius: 15px;
   border-top-left-radius: 0;
-  padding: 10px;
+  padding: 15px 15px 10px;
   margin-top: 5px;
   box-shadow: 5px 5px 5px gray;
-  background-color: antiquewhite;
-  max-width: 50%;
+  background-color: #DDA15E;
+  opacity: 0.9;
+  max-width: 70%;
+  color: #283618;
+  transition: margin-top 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .me {
   border-radius: 15px;
   border-top-right-radius: 0;
-  background-color: aqua;
+  background-color: #95BC69;
 }
 
 p.message-time {
-  color: gray;
+  color: #606C38;
   font-size: 10px;
   margin-top: 5px;
   display: flex;
@@ -169,10 +163,11 @@ p.message-time {
 div.chat-room-bottom-container {
   display: flex;
   flex-direction: row;
-  border: 1px solid #CAD5CA;
+  opacity: 0.6;
+
   border-radius: 4px;
   margin: 15px 0;
-  padding: 10px;
+  padding: 10px 0;
   align-items: center;
 }
 
@@ -189,59 +184,63 @@ textarea.chat-room-message-input {
   width: 100%;
   margin-right: 10px;
   height: 50px;
-  /* height: auto; */
+  border-radius: 4px;
   overflow: hidden;
   padding: 16px;
   resize: none;
 }
 
-div.chat-room-send-button-container {
+.send-message-button {
+  border: none;
+  background-color: #283618;
   display: flex;
-}
-
-div.send-message-button-container {
-  display: flex;
+  width: 50px; 
+  height: 50px;
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
-
-  background-color: rgb(8, 87, 14);
-  padding: 5px 10px;
-  border-radius: 4px;
   transition: 0.3s;
-  width: 100px;
-  cursor: pointer;
 }
 
-div.send-message-button-container:hover {
+.send-message-button:hover {
   opacity: 0.7;
 }
 
-input.send-message-button {
-  font-size: 16px;
+.send-icon {
+  color: white;
+}
+
+.hide-menu {
+  overflow-x: hidden;
+  transition: 1s;
+  width: 0;
+  /* display: none; */
+  z-index: -100;
+}
+
+.expand-message-list-container {
+  margin-left: 0px;
+}
+
+.message-list-container-header button {
   border: none;
-  background-color: rgb(8, 87, 14);
-  color: white;
-  height: 40px;
-  font-weight: 700;
+  background-color: #E5EEDA;
+}
+
+img {
+  max-width: 50%;
+  float: left;
   margin-right: 10px;
-  cursor: pointer;
+  border-radius: 4px;
 }
 
-svg.send-icon {
-  color: white;
+@media (max-width: 600px) { 
+  .message-box {
+    max-width: 100%;
+  } 
 }
 
-
-@media (max-width: 600px)
-{
-  div.users-list-container {
-    overflow-x: hidden;
-    transition: 1s;
-    width: 0;
-    z-index: -100;
-  }
-
-  div.message-list-container {
-    margin-left: -25px;
-  }
+.logo-room {
+  width: 100px;
+  margin-bottom: 10px;
 }

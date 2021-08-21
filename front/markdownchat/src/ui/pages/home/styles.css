@@ -1,51 +1,64 @@
-div.main {
+.main {
   display: flex;
-  height: 100vh;
   flex: 1;
+  height: 100%;
   justify-content: center;
-  align-items: center;
+  background-color: #E5EEDA;
+}
+
+.main form {
+  height: auto;
+  display: flex;
   flex-direction: column;
-  max-width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 
-h1.login-title {
+.login-title {
   margin-bottom: 50px;
+  display: block;
 }
 
-input.fields {
-  /* box-shadow: 1px 0px 5px #000; */
-  border: 1px solid gray;
+.fields {
+  display: flex;
+  /* border: 1px solid gray; */
+  border: none;
   font-size: 16px;
   height: 50px;
   padding: 0 15px;
   border-radius: 4px;
+  margin-top: 20px;
+  width: 90%;
 }
 
-input.fields:focus {
-  border: 2px solid black;
+.fields:focus {
+  border: 2px solid #283618;
 }
 
-div.enter-room-button-container {
+.enter-room-button {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
-  background-color: rgb(8, 87, 14);
+  background-color: #283618;
   border-radius: 4px;
   transition: 0.3s;
+  height: 50px;
+  margin-top: 50px;
+  border: none;
 }
 
-div.enter-room-button-container:hover {
+.enter-room-button:hover {
   opacity: 0.7;
 }
 
-input.enter-room-button {
-  font-size: 16px;
-  border: none;
-  background-color: rgb(8, 87, 14);
+.enter-room-button span {
   color: white;
-  height: 40px;
   font-weight: 700;
+  font-size: 16px;
   margin-right: 10px;
 }
 
+.logo-home {
+  margin-bottom: 30px;
+}
