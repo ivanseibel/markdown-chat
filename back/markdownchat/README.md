@@ -4,7 +4,9 @@
 
 [1. How to Run](#1how-to-run)\
 [1.1. Install Dependencies](#11-install-dependencies)\
-[1.2. Configurations](#12configurations)
+[1.2. Configurations](#12configurations)\
+[1.3. Migrations](#13migrations)\
+[1.4. Run the Server](#14run-the-server)
 
 ## 1. How to Run
 
@@ -35,4 +37,12 @@ To do this, just run the following commands on your terminal inside the folder `
 ```bash
 # python3 manage.py makemigrations chat
 # python3 manage.py migrate
+```
+
+### 1.4. Run the Server
+
+Right now you'll be able to run the server to get your app ready to receive new connections.
+
+```bash
+# python3 manage.py runserver
 ```
