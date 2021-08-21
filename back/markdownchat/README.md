@@ -46,3 +46,13 @@ Right now you'll be able to run the server to get your app ready to receive new 
 ```bash
 # python3 manage.py runserver
 ```
+
+After that you'll see some outputs on your terminal similar to this:
+
+```bash
+System check identified no issues (0 silenced).
+August 21, 2021 - 23:11:22
+Django version 3.2.5, using settings 'markdownchat.settings'
+Starting ASGI/Channels version 3.0.4 development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
