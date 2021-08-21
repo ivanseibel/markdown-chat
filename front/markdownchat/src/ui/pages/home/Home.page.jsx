@@ -1,6 +1,7 @@
-import React, { useState, useCallback, useContext } from 'react';
 import { RoomContext } from '../../../context';
+import React, { useState, useCallback, useContext } from 'react';
 import { FiLogIn } from 'react-icons/fi';
+import logo from '../../../static/logo.png';
 
 import './styles.css';
 
@@ -26,41 +27,41 @@ export function Home() {
 
   return (
     <div className="main">
-      <h1 className="login-title">Markdown Chat</h1>
-      <input
-        onChange={handleOnChange}
-        value={username}
-        type="text"
-        id="chat-username-input"
-        size="39"
-        autoFocus
-        placeholder="username"
-        disabled={isConnected}
-        className="fields"
-      />
-      <br /><br />
-      <input
-        onChange={handleOnChange}
-        value={room}
-        type="text"
-        id="chat-room-input"
-        size="39"
-        placeholder="room"
-        disabled={isConnected}
-        className="fields"
-      />
-      <br /><br />
-      <div className="enter-room-button-container">
+      <form onSubmit={(e) => { e.preventDefault() }} >
+        <img src={logo} alt="logo" className="logo-home" />
         <input
-          type="button"
-          value="Enter Room"
+          onChange={handleOnChange}
+          value={username}
+          type="text"
+          id="chat-username-input"
+          size="39"
+          autoFocus
+          placeholder="username"
+          disabled={isConnected}
+          className="fields"
+        />
+        <input
+          onChange={handleOnChange}
+          value={room}
+          type="text"
+          id="chat-room-input"
+          size="39"
+          placeholder="room"
+          disabled={isConnected}
+          className="fields"
+        />
+        <button
+          type="submit"
+          value=""
           id="chat-connect"
           onClick={() => { handleConnect(username, room) }}
           disabled={username.length === 0 || room.length === 0}
           className="enter-room-button"
-        />
-        <FiLogIn className="logout-icon" size={20} />
-      </div>
+        >
+          <span>Enter Room</span>
+          <FiLogIn className="logout-icon" size={20} />
+        </button>
+      </form>
 
     </div>
   );
