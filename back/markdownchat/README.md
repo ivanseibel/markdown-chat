@@ -2,11 +2,11 @@
 
 ## List Of Items
 
-[1. How to Run](#1-how-to-run)\
-[1.1. Install Dependencies](#11-install-dependencies)\
-[1.2. Configurations](#12-configurations)\
-[1.3. Migrations](#13-migrations)\
-[1.4. Run the Server](#14-run-the-server)
+- [1. How to Run](#1-how-to-run)
+  - [1.1. Install Dependencies](#11-install-dependencies)
+  - [1.2. Configurations](#12-configurations)
+  - [1.3. Migrations](#13-migrations)
+  - [1.4. Run the Server](#14-run-the-server)
 
 ## 1. How to Run
 
