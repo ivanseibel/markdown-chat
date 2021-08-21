@@ -1,5 +1,6 @@
 import { createContext, useState, useCallback } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
+import { api } from '../../services/api';
 
 export const RoomContext = createContext({});
 
