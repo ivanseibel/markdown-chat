@@ -1,5 +1,6 @@
 import { createContext, useState, useCallback } from 'react';
 import useWebSocket, { ReadyState } from 'react-use-websocket';
+import { format } from 'date-fns';
 import { api } from '../../services/api';
 
 export const RoomContext = createContext({});
@@ -27,8 +28,9 @@ export const RoomProvider = ({ children }) => {
   const onMessageHandler = useCallback((event) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
+    const time = format(new Date(), 'MM/dd/yyyy HH:mm');
 
-    const newMessageHistory = [...messageHistory, { message, username }];
+    const newMessageHistory = [...messageHistory, { message, username, time }];
 
     setUserList(users);
     setMessageHistory(newMessageHistory);
