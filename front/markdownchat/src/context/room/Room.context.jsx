@@ -12,6 +12,17 @@ export const RoomProvider = ({ children }) => {
   const [signedRoom, setSignedRoom] = useState('');
   const [usersList, setUserList] = useState([]);
 
+  const canConnect = useCallback(async ({ username, room }) => {
+    try {
+      const response = await api.get(`/get_signed_user/${room}/${username}`);
+      const { user_exists } = response.data;
+      return !!user_exists;
+    } catch (error) {
+      console.log(error.message)
+      return false;
+    }
+  }, []);
+
   const onMessageHandler = useCallback((event) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
@@ -45,12 +56,25 @@ export const RoomProvider = ({ children }) => {
     }
   }, [isConnected, sendJsonMessage, signedUser])
 
-  const handleConnect = useCallback((username, room) => {
-    setSignedUser(username);
-    setSignedRoom(room);
-    setIsConnected(!isConnected);
+  const handleConnect = useCallback(async (username, room) => {
+
+    if (!isConnected) {
+      const isSigned = await canConnect({ username, room });
+      if (!isSigned) {
+        setSignedUser(username);
+        setSignedRoom(room);
+        setIsConnected(true);
+      } else {
+        alert("User is already logged in the room");
+        setIsConnected(false);
+      }
+    } else {
+      setIsConnected(false);
+    }
+
     setMessageHistory([]);
-  }, [isConnected]);
+
+  }, [isConnected, canConnect]);
 
   const roomProps = {
     handleSendMessage,
