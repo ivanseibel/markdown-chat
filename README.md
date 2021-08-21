@@ -20,8 +20,21 @@ In general terms, it is a Javascript SPA (Single Page Application) that uses the
 
 Instead of starting with a Javascript application "from scratch", the presentation layer was built using the so-called "create-react-app" boilerplate, which adds advanced features to the project and some enablers that allow speed gain of development.
 
+# Main Features
+
+1. Real-time communication using WebSockets.
+2. To access a room it is necessary to inform a username and the name of the room.
+3. A room cannot contain more than one user with the same name.
+4. The room should display a list of all users who are logged in there.
+5. When a new user enters or leaves the room, a message is displayed on the timeline.
+6. The room user list can be hidden and unhidden.
+7. Users can format text using Markdown syntax.
+8. Text input from messages allows writing on multiple lines.
+9. Users can send the message using the Ctrl + Enter key combination or by clicking the Send button.
+10. Responsive design following the "mobile-first" paradigm.
+
 # Architectural Detailing
 
 [Back-End](https://github.com/ivanseibel/markdown-chat/blob/main/back/markdownchat/README.md)
 
-Front-End
+[Front-End](https://github.com/ivanseibel/markdown-chat/tree/main/front/markdownchat/README.md)
