@@ -2,8 +2,8 @@
 
 ## List Of Items
 
-[1.1. How to Run](https://github.com/ivanseibel/markdown-chat/tree/main/back/markdownchat#how-to-run)\
-[1.1.1. Install Dependencies](https://github.com/ivanseibel/markdown-chat/tree/main/back/markdownchat#install-dependencies)\
+[1.1. How to Run](#how-to-run)  
+[1.1.1. Install Dependencies](#install-dependencies)  
 [1.1.2. Configurations](#configurations)
 
 ## 1.1. How to Run
