@@ -1,8 +1,14 @@
-# Markdown Webchat - Back-End
+# 1. Markdown Webchat - Back-End
 
-## How to Run
+## List Of Items
 
-### Install Dependencies
+[1.1. How to Run](https://github.com/ivanseibel/markdown-chat/tree/main/back/markdownchat#how-to-run)
+[1.1.1. Install Dependencies](https://github.com/ivanseibel/markdown-chat/tree/main/back/markdownchat#install-dependencies)
+[1.1.2. Configurations](#configurations)
+
+## 1.1. How to Run
+
+### 1.1.1. Install Dependencies
 
 First of all you have to install python3 and pip to be able to run this project and install all of the dependencies.
 
@@ -16,7 +22,7 @@ To install all of the dependencies you just have to run the following command us
 # pip install -r /path/to/requirements.txt
 ```
 
-### Configurations
+### 1.1.2. Configurations
 
 For security reasons I'm using .env files to the save secret key during programming time and the library that provides access to environment variables is `python-decouple`. You can rename file `.env.template` to `.env` and then put your security key inside and your Django app will be able to read it.
 
