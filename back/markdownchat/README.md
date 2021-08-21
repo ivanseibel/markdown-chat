@@ -18,4 +18,5 @@ To install all of the dependencies you just have to run the following command us
 
 ### Configurations
 
-For security reasons I'm using .env files to save secret key during programming time and the library that provides access to environment variables is `decouple`. You can rename file `.env.template` to `.env` and then put your security key inside.
+For security reasons I'm using .env files to the save secret key during programming time and the library that provides access to environment variables is `python-decouple`. You can rename file `.env.template` to `.env` and then put your security key inside and your Django app will be able to read it.
+
