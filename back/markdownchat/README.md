@@ -2,9 +2,9 @@
 
 ## List Of Items
 
-[1.1. How to Run](#how-to-run)  
-[1.1.1. Install Dependencies](#install-dependencies)  
-[1.1.2. Configurations](#configurations)
+[1.1. How to Run](#11how-to-run)\
+[1.1.1. Install Dependencies](#111-install-dependencies)\
+[1.1.2. Configurations](#112configurations)
 
 ## 1.1. How to Run
 
