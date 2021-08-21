@@ -1,7 +1,10 @@
 <h1 align="center">
     <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/logo.png?raw=true" width="200px" />
-    <p>Project: Markdown Chat</p>
 </h1>
+
+<h3>
+    <p>Project: Markdown Chat</p>
+</h3>
 
 A real-time webchat that accepts Markdown syntax in messages sent by users.
 
