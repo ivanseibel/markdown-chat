@@ -119,6 +119,7 @@ In addition, we have the option of working with synchronous code, as is Django's
 Below I describe the main consumer methods and their purpose.
 
 `get_users_list`: returns the list of users logged into a specific room.
+
 `get_user`: checks if a specific user is logged into a specific room.
 
     @database_sync_to_async
