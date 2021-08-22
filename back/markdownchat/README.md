@@ -120,66 +120,35 @@ Below I describe the main consumer methods and their purpose.
 
 **Database methods:**
 
-`get_users_list`
-  - Returns do banco de dados the list of users logged into a specific room.
-
-`get_user`
-  - Checks no banco de dados if a specific user is logged into a specific room.
-
-`add_user` 
-  - Add a new user to a specific room no banco de dados.
-
-`remove_user` 
-  - Removes a specific user from a specific room in the database.
+- `get_users_list`: Returns do banco de dados the list of users logged into a specific room.
+- `get_user`: Checks no banco de dados if a specific user is logged into a specific room.
+- `add_user`: Add a new user to a specific room no banco de dados.
+- `remove_user`: Removes a specific user from a specific room in the database.
 
 **Consumer methods:**
 
-`connect`
+- `connect`: When socket connection is created.
   - Get route data to identify room name and username.
   - Checks if the user is already logged in to a specific room and rejects if true.
   - Adds the user to the list of logged in users for the room.
   - Adds the new connection to the room group.
   - Sends a message to the room informing you that a new user has joined.
 
-`disconnect`
+- `disconnect`: When socked connection is closed.
   - Remove disconnected user from the users list.
   - Sends a message to the room that a user has left.
   - Leave room group
 
-async def receive(self, text_data):
+- `receive`: Receive message from WebSocket.
+  - Get and parse data from WebSocket.
+  - Send message to room group.
+
+- `chat_message`: Receive message from room group
+  - Get and parse data from WebSocket.
+  - Get the list of connected users at a specific room.
+  - Send data to WebSocket.
     <!-- 
-    # Receive message from WebSocket
 
-        text_data_json = json.loads(text_data)
-        message = text_data_json['message']
-        username = text_data_json['username']
-        type = text_data_json['type']
-
-        # Send message to room group
-        await self.channel_layer.group_send(
-            self.room_group_name,
-            {
-                'type': type,
-                'message': message,
-                'username': username,
-            }
-        )
-
-    # Receive message from room group
-    async def chat_message(self, event):
-        message = event['message']
-        username = event['username']
-        type = event['type']
-
-        users = await self.get_users_list()
-
-        # Send message to WebSocket
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'username': username,
-            'type': type,
-            'users': users,
-        }))
 
     # User leave room
     async def chat_leave_room(self, event):
