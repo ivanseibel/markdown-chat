@@ -118,14 +118,14 @@ In addition, we have the option of working with synchronous code, as is Django's
 
 Below I describe the main consumer methods and their purpose.
 
-**Database methods:**
+#### 3.1.1. Database methods:
 
 - `get_users_list`: Returns do banco de dados the list of users logged into a specific room.
 - `get_user`: Checks no banco de dados if a specific user is logged into a specific room.
 - `add_user`: Add a new user to a specific room no banco de dados.
 - `remove_user`: Removes a specific user from a specific room in the database.
 
-**Consumer methods:**
+#### 3.1.2. Consumer methods:
 
 - `connect`: When socket connection is created.
   - Get route data to identify room name and username.
