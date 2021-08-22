@@ -81,7 +81,7 @@ Channels description from Channels documentation.
 
 > Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.
 
-Channels allow us to implement the protocol that provides all communication between server and clients in real-time. 
+Channels allow us to implement the protocol that provides all communication between server and clients in real-time through the Consumer layer that could be compared to the Django Views layer. 
 
 To make it easier to understand how Channels works, let's take a look at the diagram below:
 
@@ -93,4 +93,7 @@ To make it easier to understand how Channels works, let's take a look at the dia
 
 ### 2.3. Database (SQLite)
 
-SQLite3...continues.
+There are some reasons to use a database in this project.
+
+The first is that you need to maintain an up-to-date list of logged-in users and the best way to do this consistently is to persist in a database. SQLite is very easy to use, offers all the necessary features and requires no installation as it is file system based.
+
