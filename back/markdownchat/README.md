@@ -65,7 +65,14 @@ Quit the server with CONTROL-C.
 Basically, the back-end layer depends of three main technologies to implement the needed services: HTTP Requests, WebSocket and a Database.
 ### 2.1. HTTP Requests (Django)
 
-Django...continues.
+The first reason I adopted Django as a framework to develop this project was productivity. It's amazing how in just a few minutes you can have a working MVC application with very little code as soon as you install Django.
+
+The second reason was the possibility to use the Channels library which is quite mature, is simple to implement on top of Django, has excellent documentation and an active community of developers who use it.
+
+And finally, being able to use the MVC model at the beginning of the project made it easier to carry out tests by creating simple views that allowed us to better understand how Channels works at development time.
+
+At another time I intend to replace Django with its REST version, since the project doesn't use the MVC model in production.
+
 ### 2.2. WebSocket (Channels)
 
 Channels...continues.
