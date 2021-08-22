@@ -81,7 +81,11 @@ Channels description from Channels documentation.
 
 > Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.
 
+Channels allow us to implement the protocol that provides all communication between server and clients in real-time. 
 
+To make it easier to understand how Channels works, let's take a look at the diagram below:
+
+![django-channels](https://heroku-blog-files.s3.amazonaws.com/posts/1473343845-django-wsgi.png)
 
 ### 2.3. Database (SQLite)
 
