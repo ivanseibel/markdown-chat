@@ -120,50 +120,25 @@ Below I describe the main consumer methods and their purpose.
 
 **Database methods:**
 
-- `get_users_list`: 
+- `get_users_list`
   - Returns do banco de dados the list of users logged into a specific room.
-- `get_user`: 
+- `get_user`
   - Checks no banco de dados if a specific user is logged into a specific room.
-- `add_user`: 
+- `add_user` 
   - Add a new user to a specific room no banco de dados.
-- `remove_user`: 
+- `remove_user` 
   - Removes a specific user from a specific room in the database.
 
-    async def connect(self):
-        # Get data from route to identify room name and username
-        self.room_name = self.scope['url_route']['kwargs']['room_name']
-        self.username = self.scope['url_route']['kwargs']['username']
-        self.room_group_name = 'chat_%s' % self.room_name
+**Consumer methods**
 
-        # user = await self.get_user(username=self.username, room_name=self.room_name)
-        user = await self.get_user()
+- `connect`
+  - Get route data to identify room name and username.
+  - Checks if the user is already logged in to a specific room and rejects if true.
+  - Adds the user to the list of logged in users for the room.
+  - Adds the new connection to the room group.
+  - Sends a message to the room informing you that a new user has joined.
 
-        # If found, refuse connection
-        if (user):
-            await self.close()
-            return
-
-        await self.add_user()
-
-        # Join room group
-        await self.channel_layer.group_add(
-            self.room_group_name,
-            self.channel_name
-        )
-        await self.accept()
-
-        # Send message to room group
-        message = f"{self.username} entered the room"
-        await self.channel_layer.group_send(
-            self.room_group_name,
-            {
-                'type': 'chat_enter_room',
-                'message': message,
-                'username': self.username,
-            }
-        )
-
-    async def disconnect(self, close_code):
+    <!-- async def disconnect(self, close_code):
         # Remove disconnected from the users list
         await self.remove_user()
 
@@ -248,4 +223,4 @@ Below I describe the main consumer methods and their purpose.
             'username': username,
             'type': type,
             'users': users
-        }))
+        })) -->
