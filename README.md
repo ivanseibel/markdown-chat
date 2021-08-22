@@ -9,7 +9,7 @@
     <img alt="Made by Ivan Seibel" src="https://img.shields.io/badge/Made%20by-Ivan%20Seibel-blue">
   </a>
 
-  <img alt="License" src="https://img.shields.io/github/license/ivanseibel/markdown-chat?color=blue">
+  <img alt="License" src="https://img.shields.io/github/license/ivanseibel/markdown-chat?color=yellow">
 
   <a href="https://github.com/ivanseibel/markdown-chat/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/ivanseibel/markdown-chat">
