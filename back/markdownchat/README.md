@@ -77,7 +77,12 @@ You can learn more about Django at [https://www.djangoproject.com/](https://www.
 
 ### 2.2. WebSocket (Channels)
 
-Channels...continues.
+Channels description from Channels documentation.
+
+> Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.
+
+
+
 ### 2.3. Database (SQLite)
 
 SQLite3...continues.
