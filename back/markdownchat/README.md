@@ -85,7 +85,7 @@ Channels allow us to implement the protocol that provides all communication betw
 
 To make it easier to understand how Channels works, let's take a look at the diagram below:
 
-![django-channels](https://heroku-blog-files.s3.amazonaws.com/posts/1473343845-django-wsgi.png)
+![django-channels](https://heroku-blog-files.s3.amazonaws.com/posts/1473343845-django-wsgi.png "Django with Channels")
 
 ### 2.3. Database (SQLite)
 
