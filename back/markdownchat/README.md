@@ -11,8 +11,8 @@
   - [2.1. HTTP Requests](#21-http-requests-django)
   - [2.2. WebSocket](#22-websocket-channels)
   - [2.3. Database](#23-database-sqlite)
-- [3. Details About the Code]()
-  - [3.1. back/markdownchat/chat/consumers.py]()
+- [3. Details About the Code](#3-details-about-the-code)
+  - [3.1. back/markdownchat/chat/consumers.py](#31-backmarkdownchatchatconsumerspy)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -119,13 +119,7 @@ In addition, we have the option of working with synchronous code, as is Django's
 Below I describe the main consumer methods and their purpose.
 
 `get_users_list`: returns the list of users logged into a specific room.
-
-    @database_sync_to_async
-    def get_user(self):
-        return SignedUser.objects.filter(
-            username=self.username,
-            room=self.room_name,
-        ).first()
+`get_user`: checks if a specific user is logged into a specific room.
 
     @database_sync_to_async
     def add_user(self):
