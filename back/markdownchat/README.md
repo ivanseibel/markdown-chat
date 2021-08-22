@@ -129,7 +129,7 @@ Below I describe the main consumer methods and their purpose.
 - `remove_user` 
   - Removes a specific user from a specific room in the database.
 
-**Consumer methods**
+**Consumer methods:**
 
 - `connect`
   - Get route data to identify room name and username.
@@ -138,27 +138,12 @@ Below I describe the main consumer methods and their purpose.
   - Adds the new connection to the room group.
   - Sends a message to the room informing you that a new user has joined.
 
-    <!-- async def disconnect(self, close_code):
-        # Remove disconnected from the users list
-        await self.remove_user()
+- `disconnect`
+  - Remove disconnected user from the users list.
+  - Sends a message to the room that a user has left.
+  - Leave room group
 
-        # Send message to room group
-        message = f"{self.username} left the room"
-        await self.channel_layer.group_send(
-            self.room_group_name,
-            {
-                'type': 'chat_leave_room',
-                'message': message,
-                'username': self.username,
-            }
-        )
-
-        # Leave room group
-        await self.channel_layer.group_discard(
-            self.room_group_name,
-            self.channel_name
-        )
-
+    <!-- 
     # Receive message from WebSocket
 
     async def receive(self, text_data):
