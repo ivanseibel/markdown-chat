@@ -134,50 +134,15 @@ Below I describe the main consumer methods and their purpose.
   - Adds the new connection to the room group.
   - Sends a message to the room informing you that a new user has joined.
 
-- `disconnect`: When socked connection is closed.
+- `disconnect`: Triggered when socked connection is closed.
   - Remove disconnected user from the users list.
   - Sends a message to the room that a user has left.
   - Leave room group
 
-- `receive`: Receive message from WebSocket.
-  - Get and parse data from WebSocket.
-  - Send message to room group.
+- `receive`: Triggered when receives a new message from WebSocket.
+  - Get data and redirect to the specific room according the message type.
 
-- `chat_message`: Receive message from room group
-  - Get and parse data from WebSocket.
+- `chat_message`: Send data to a specific room.
   - Get the list of connected users at a specific room.
   - Send data to WebSocket.
-    <!-- 
-
-
-    # User leave room
-    async def chat_leave_room(self, event):
-        username = event['username']
-        type = event['type']
-        message = event['message']
-
-        users = await self.get_users_list()
-
-        # Send message to WebSocket
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'username': username,
-            'type': type,
-            'users': users
-        }))
-
-    # User enter room
-    async def chat_enter_room(self, event):
-        username = event['username']
-        type = event['type']
-        message = event['message']
-
-        users = await self.get_users_list()
-
-        # Send message to WebSocket
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'username': username,
-            'type': type,
-            'users': users
-        })) -->
+    

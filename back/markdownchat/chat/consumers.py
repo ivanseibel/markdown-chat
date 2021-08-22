@@ -59,7 +59,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                'type': 'chat_enter_room',
+                # 'type': 'chat_enter_room',
+                'type': 'chat_message',
                 'message': message,
                 'username': self.username,
             }
@@ -74,7 +75,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.channel_layer.group_send(
             self.room_group_name,
             {
-                'type': 'chat_leave_room',
+                # 'type': 'chat_leave_room',
+                'type': 'chat_message',
                 'message': message,
                 'username': self.username,
             }
@@ -117,36 +119,4 @@ class ChatConsumer(AsyncWebsocketConsumer):
             'username': username,
             'type': type,
             'users': users,
-        }))
-
-    # User leave room
-    async def chat_leave_room(self, event):
-        username = event['username']
-        type = event['type']
-        message = event['message']
-
-        users = await self.get_users_list()
-
-        # Send message to WebSocket
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'username': username,
-            'type': type,
-            'users': users
-        }))
-
-    # User enter room
-    async def chat_enter_room(self, event):
-        username = event['username']
-        type = event['type']
-        message = event['message']
-
-        users = await self.get_users_list()
-
-        # Send message to WebSocket
-        await self.send(text_data=json.dumps({
-            'message': message,
-            'username': username,
-            'type': type,
-            'users': users
         }))
