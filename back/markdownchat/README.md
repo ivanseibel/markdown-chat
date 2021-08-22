@@ -8,9 +8,9 @@
   - [1.3. Migrations](#13-migrations)
   - [1.4. Run the Server](#14-run-the-server)
 - [2. Main Technologies](#2-main-technologies)
-  - [2.1. HTTP Requests](#21-http-requests)
-  - [2.2. WebSocket](#22-websocket)
-  - [2.3. Database](#23-database)
+  - [2.1. HTTP Requests](#21-http-requests-django)
+  - [2.2. WebSocket](#22-websocket-channels)
+  - [2.3. Database](#23-database-sqlite)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
