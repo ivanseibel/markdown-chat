@@ -120,10 +120,14 @@ Below I describe the main consumer methods and their purpose.
 
 **Database methods:**
 
-- `get_users_list`: returns do banco de dados the list of users logged into a specific room.
-- `get_user`: checks no banco de dados if a specific user is logged into a specific room.
-- `add_user`: add a new user to a specific room no banco de dados.
-- `remove_user`: removes a specific user from a specific room in the database.
+- `get_users_list`: 
+  - Returns do banco de dados the list of users logged into a specific room.
+- `get_user`: 
+  - Checks no banco de dados if a specific user is logged into a specific room.
+- `add_user`: 
+  - Add a new user to a specific room no banco de dados.
+- `remove_user`: 
+  - Removes a specific user from a specific room in the database.
 
     async def connect(self):
         # Get data from route to identify room name and username
