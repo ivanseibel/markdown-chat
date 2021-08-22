@@ -11,6 +11,8 @@
   - [2.1. HTTP Requests](#21-http-requests-django)
   - [2.2. WebSocket](#22-websocket-channels)
   - [2.3. Database](#23-database-sqlite)
+- [3. Details About the Code]()
+  - [3.1. back/markdownchat/chat/consumers.py]()
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -106,7 +108,7 @@ You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
 ## 3. Details About the Code
 
-## back/markdownchat/chat/consumers.py
+### 3.1. back/markdownchat/chat/consumers.py
 
 Overall, the consumer is responsible for providing a simplified way to handle the Channel's low-level ASGI implementation.
 
