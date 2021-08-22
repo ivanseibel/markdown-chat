@@ -73,7 +73,7 @@ And finally, being able to use the MVC model at the beginning of the project mad
 
 At another time I intend to replace Django with its REST version, since the project doesn't use the MVC model in production.
 
-You can learn more about Django at [https://www.djangoproject.com/](https://www.djangoproject.com/).
+You can learn more about Django at [www.djangoproject.com](https://www.djangoproject.com/).
 
 ### 2.2. WebSocket (Channels)
 
@@ -91,9 +91,13 @@ To make it easier to understand how Channels works, let's take a look at the dia
     <span align="center">Source: <a href="https://blog.heroku.com/in_deep_with_django_channels_the_future_of_real_time_apps_in_django" target="_blank" rel="noopener">Heroku Blog Post</a></span>
 </p>
 
+You can learn more about Channels at [channels.readthedocs.io](https://channels.readthedocs.io/en/stable/index.html).
 ### 2.3. Database (SQLite)
 
 There are some reasons to use a database in this project.
 
 The first is that you need to maintain an up-to-date list of logged-in users and the best way to do this consistently is to persist in a database. SQLite is very easy to use, offers all the necessary features and requires no installation as it is file system based.
 
+One of the improvements I can see for this project is the introduction of the native authentication system provided by Django, in which case the database will be an important part of making this mechanism work.
+
+You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
