@@ -1,7 +1,3 @@
-<h3 align="center">
-    <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/logo.png?raw=true" width="200px" />
-</h3>
-
 # Markdown Webchat - Back-End
 
 ## List Of Items
