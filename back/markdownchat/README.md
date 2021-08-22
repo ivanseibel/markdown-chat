@@ -87,6 +87,7 @@ To make it easier to understand how Channels works, let's take a look at the dia
 
 <p align="center">
     <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/1473343845-django-wsgi.png?raw=true" width="500px" />
+    <span>Source: <a href="https://blog.heroku.com/in_deep_with_django_channels_the_future_of_real_time_apps_in_django" target="_blank" rel="noopener"></a></span>
 </p>
 
 ### 2.3. Database (SQLite)
