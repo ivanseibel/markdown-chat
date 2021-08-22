@@ -106,7 +106,7 @@ You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
 ## 3. Details About the Code
 
-**back/markdownchat/chat/consumers.py**
+## back/markdownchat/chat/consumers.py
 
 Overall, the consumer is responsible for providing a simplified way to handle the Channel's low-level ASGI implementation.
 
