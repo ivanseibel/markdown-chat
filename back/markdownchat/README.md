@@ -118,7 +118,7 @@ In addition, we have the option of working with synchronous code, as is Django's
 
 Below I describe the main consumer methods and their purpose.
 
-Database methods:
+**Database methods:**
 
 - `get_users_list`: returns do banco de dados the list of users logged into a specific room.
 - `get_user`: checks no banco de dados if a specific user is logged into a specific room.
