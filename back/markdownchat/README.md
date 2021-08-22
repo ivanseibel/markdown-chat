@@ -100,4 +100,6 @@ The first is that you need to maintain an up-to-date list of logged-in users and
 
 One of the improvements I can see for this project is the introduction of the native authentication system provided by Django, in which case the database will be an important part of making this mechanism work.
 
+Using a database system, in the near future we may save other types of information to help users get a better experience with this chat, such as favorite rooms, profile information, usage statistics, message history, advertisements, warnings and more.
+
 You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
