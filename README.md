@@ -3,16 +3,16 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ivanseibel/markdown-chat">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ivanseibel/markdown-chat?color=plastic">
 
   <a href="https://github.com/ivanseibel">
-    <img alt="Made by Ivan Seibel" src="https://img.shields.io/badge/Made%20by-Ivan%20Seibel-blue">
+    <img alt="Made by Ivan Seibel" src="https://img.shields.io/badge/Made%20by-Ivan%20Seibel-plastic">
   </a>
 
-  <img alt="License" src="https://img.shields.io/github/license/ivanseibel/markdown-chat?color=blue">
+  <img alt="License" src="https://img.shields.io/github/license/ivanseibel/markdown-chat?color=plastic">
 
   <a href="https://github.com/ivanseibel/markdown-chat/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/ivanseibel/markdown-chat">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/ivanseibel/markdown-chat?color=plastic">
   </a>
 </p>
 
