@@ -86,7 +86,7 @@ Channels allow us to implement the protocol that provides all communication betw
 To make it easier to understand how Channels works, let's take a look at the diagram below:
 
 <p align="center">
-    <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/1473343845-django-wsgi.png?raw=true" width="200px" />
+    <img alt="Markdown Chat" src="https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/1473343845-django-wsgi.png?raw=true" width="500px" />
 </p>
 
 ### 2.3. Database (SQLite)
