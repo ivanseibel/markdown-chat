@@ -13,6 +13,8 @@
   - [2.3. Database](#23-database-sqlite)
 - [3. Details About the Code](#3-details-about-the-code)
   - [3.1. back/markdownchat/chat/consumers.py](#31-backmarkdownchatchatconsumerspy)
+    - [3.1.1. Database methods](#311-database-methods)
+    - [3.1.2. Consumer methods](#312-consumer-methods)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
