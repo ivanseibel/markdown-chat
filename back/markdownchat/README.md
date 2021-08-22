@@ -73,6 +73,8 @@ And finally, being able to use the MVC model at the beginning of the project mad
 
 At another time I intend to replace Django with its REST version, since the project doesn't use the MVC model in production.
 
+You can learn more about Django at [https://www.djangoproject.com/](https://www.djangoproject.com/).
+
 ### 2.2. WebSocket (Channels)
 
 Channels...continues.
