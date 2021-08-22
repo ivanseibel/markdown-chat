@@ -63,12 +63,12 @@ Quit the server with CONTROL-C.
 ## 2. Main Technologies
 
 Basically, the back-end layer depends of three main technologies to implement the needed services: HTTP Requests, WebSocket and a Database.
-### 2.1. HTTP Requests
+### 2.1. HTTP Requests (Django)
 
 Django...continues.
-### 2.2. WebSocket
+### 2.2. WebSocket (Channels)
 
 Channels...continues.
-### 2.3. Database
+### 2.3. Database (SQLite)
 
 SQLite3...continues.
