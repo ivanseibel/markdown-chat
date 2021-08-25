@@ -15,6 +15,7 @@
   - [3.1. back/markdownchat/chat/consumers.py](#31-backmarkdownchatchatconsumerspy)
     - [3.1.1. Database methods](#311-database-methods)
     - [3.1.2. Consumer methods](#312-consumer-methods)
+  [3.2. back/markdownchat/chat/models.py]()
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -148,3 +149,4 @@ Below I describe the main consumer methods and their purpose.
   - Get the list of connected users at a specific room.
   - Send data to WebSocket.
     
+### 3.2. back/markdownchat/chat/models.py
