@@ -18,7 +18,7 @@
   - [3.2. back/markdownchat/chat/models.py](#32-backmarkdownchatchatmodelspy)
   - [3.3. back/markdownchat/chat/routing.py](#33-backmarkdownchatchatroutingpy)
   - [3.4. back/markdownchat/chat/urls.py](#34-backmarkdownchatchaturlspy)
-  - [3.5. back/markdownchat/chat/views.py]()
+  - [3.5. back/markdownchat/chat/views.py](#35-backmarkdownchatchatviewspy)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -166,3 +166,4 @@ Below I describe the main consumer methods and their purpose.
 
 ### 3.5. back/markdownchat/chat/views.py
 
+- `def get_signed_user`: Returns `true` if the requested user is already logged into a specific room and `false` if not. This endpoint is used so that the presentation layer can avoid two users with the same `username` in the same room.
