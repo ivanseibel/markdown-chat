@@ -15,8 +15,8 @@
   - [3.1. back/markdownchat/chat/consumers.py](#31-backmarkdownchatchatconsumerspy)
     - [3.1.1. Database methods](#311-database-methods)
     - [3.1.2. Consumer methods](#312-consumer-methods)
-- [3.2. back/markdownchat/chat/models.py](#32-backmarkdownchatchatmodelspy)
-- [3.3. back/markdownchat/chat/routing.py](33-backmarkdownchatchatroutingpy)
+  - [3.2. back/markdownchat/chat/models.py](#32-backmarkdownchatchatmodelspy)
+  - [3.3. back/markdownchat/chat/routing.py](33-backmarkdownchatchatroutingpy)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
