@@ -5,6 +5,7 @@
 - [1. How to Run](#1-how-to-run)
   - [1.1. Install Dependencies](#11-install-dependencies)
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
+    - [1.1.2. Node and npm]()
 
 ## 1. How to Run
 
@@ -30,4 +31,4 @@ If you don't have `Node` yet and are using Linux or macOS, I strongly recommend 
 
 But if don't want to use a version manager for `Node`, you can install it using the official source at [nodejs.org](https://nodejs.org/).
 
-And the last recommendation is to avoid `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
+And the last recommendation is to don't use `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
