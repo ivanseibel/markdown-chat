@@ -7,8 +7,8 @@
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
     - [1.1.2. Node and npm](#112-node-and-npm)
     - [1.1.3. Installing Javascript libraries](#113-installing-javascript-libraries)
-    - [1.1.4. Environment variable]()
-    - [1.1.5. Run the project]()
+    - [1.1.4. Environment variable](#114-environment-variable)
+    - [1.1.5. Run the project](#115-run-the-project)
 
 ## 1. How to Run
 
