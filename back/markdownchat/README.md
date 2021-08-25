@@ -19,7 +19,7 @@
   - [3.3. back/markdownchat/chat/routing.py](#33-backmarkdownchatchatroutingpy)
   - [3.4. back/markdownchat/chat/urls.py](#34-backmarkdownchatchaturlspy)
   - [3.5. back/markdownchat/chat/views.py](#35-backmarkdownchatchatviewspy)
-  - [3.6. back/markdownchat/.env]()
+  - [3.6. back/markdownchat/.env](#36-backmarkdownchatenv)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -171,3 +171,8 @@ Below I describe the main consumer methods and their purpose.
 
 ### 3.6. back/markdownchat/.env
 
+This file simulates the use of environment variables that would be created in a production environment.
+
+From its use in a development environment, the developer can avoid sensitive information such as keys, credentials, etc. published in code versioning.
+
+In order for the application to be able to retrieve the environment variables it is necessary to use the `python-decouple` library.
