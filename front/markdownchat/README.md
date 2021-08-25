@@ -6,7 +6,7 @@
   - [1.1. Install Dependencies](#11-install-dependencies)
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
     - [1.1.2. Node and npm](#112-node-and-npm)
-    - [1.1.3. Installing Javascript libraries]()
+    - [1.1.3. Installing Javascript libraries](#113-installing-javascript-libraries)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
