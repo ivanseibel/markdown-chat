@@ -32,3 +32,12 @@ If you don't have `Node` yet and are using Linux or macOS, I strongly recommend 
 But if don't want to use a version manager for `Node`, you can install it using the official source at [nodejs.org](https://nodejs.org/).
 
 And the last recommendation is to don't use `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
+
+#### 1.1.3. Installing Javascript libraries
+
+Now you are able to install all Javascript dependencies for your project.
+
+```bash
+# npm install
+```
+
