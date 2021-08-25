@@ -18,6 +18,7 @@
   - [3.2. back/markdownchat/chat/models.py](#32-backmarkdownchatchatmodelspy)
   - [3.3. back/markdownchat/chat/routing.py](#33-backmarkdownchatchatroutingpy)
   - [3.4. back/markdownchat/chat/urls.py](#34-backmarkdownchatchaturlspy)
+  - [3.5. back/markdownchat/chat/views.py]()
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -162,3 +163,6 @@ Below I describe the main consumer methods and their purpose.
 ### 3.4. back/markdownchat/chat/urls.py
 
 - `urlpatterns`: Defines the patterns for the HTTP request routes and their corresponding views.
+
+### 3.5. back/markdownchat/chat/views.py
+
