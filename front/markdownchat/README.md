@@ -26,4 +26,8 @@ You don't have to use again `create-react-app` script on this project but, as yo
 
 If you already have `Node` on your operating system, you probably also have `npm` because it's part of the `Node` package.
 
-If you don't have `Node` yet and are using Linux or macOS, I strongly recommend installing it via `nvm` to be able to use different versions of `Node` very easily without creating confusion in your OS. You'll find detailed info about how to install `nvm` and how to use it to install your preferred `Node` version at [github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+If you don't have `Node` yet and are using Linux or macOS, I strongly recommend installing it via `nvm` to be able to use different versions of `Node` very easily without creating confusion in your OS. You'll find detailed info about how to install `nvm` and how to use it to install your preferred `Node` version at [github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm). In case you are a windows user, there is a similar project called windows-nvm about which you'll find more information at [github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows).
+
+But if don't want to use a version manager for `Node`, you can install it using the official source at [nodejs.org](https://nodejs.org/).
+
+And the last recommendation is to avoid `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
