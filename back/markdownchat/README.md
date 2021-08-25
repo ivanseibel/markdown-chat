@@ -171,7 +171,7 @@ Below I describe the main consumer methods and their purpose.
 
 ### 3.6. back/markdownchat/.env
 
-This file simulates the use of environment variables that would be created in a production environment.
+This file simulates the use of environment variables that would be created in a production environment. There is a file named .env.template that the developers could use to fill .env file according their development environment.
 
 From its use in a development environment, the developer can avoid sensitive information such as keys, credentials, etc. published in code versioning.
 
