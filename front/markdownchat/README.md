@@ -5,7 +5,7 @@
 - [1. How to Run](#1-how-to-run)
   - [1.1. Install Dependencies](#11-install-dependencies)
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
-    - [1.1.2. Node and npm]()
+    - [1.1.2. Node and npm](#112-node-and-npm)
 
 ## 1. How to Run
 
