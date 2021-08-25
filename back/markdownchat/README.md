@@ -17,6 +17,7 @@
     - [3.1.2. Consumer methods](#312-consumer-methods)
   - [3.2. back/markdownchat/chat/models.py](#32-backmarkdownchatchatmodelspy)
   - [3.3. back/markdownchat/chat/routing.py](#33-backmarkdownchatchatroutingpy)
+  - [3.4. back/markdownchat/chat/urls.py]()
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -155,3 +156,9 @@ Below I describe the main consumer methods and their purpose.
 - `class SignedUser`: Defines the model for the table of connected users which is intended to keep an up-to-date list of all active users and rooms on the server.
 
 ### 3.3. back/markdownchat/chat/routing.py
+
+- `websocket_urlpatterns`: Defines the patterns for the WebSocket request routes and their corresponding views.
+
+### 3.4. back/markdownchat/chat/urls.py
+
+- `urlpatterns`: Defines the patterns for the HTTP request routes and their corresponding views.
