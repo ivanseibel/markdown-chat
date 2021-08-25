@@ -7,6 +7,9 @@
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
     - [1.1.2. Node and npm](#112-node-and-npm)
     - [1.1.3. Installing Javascript libraries](#113-installing-javascript-libraries)
+    - [1.1.4. Environment variable]()
+    - [1.1.5. Run the project]()
+
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -39,5 +42,31 @@ Now you are able to install all Javascript dependencies for your project.
 
 ```bash
 # npm install
+```
+
+#### 1.1.4. Environment variable
+
+Describing...
+
+#### 1.1.5. Run the project
+
+You're ready to go.
+
+```bash
+# npm start
+```
+
+After running `npm start`, you will see something like the image below in the terminal and your browser should automatically start on the project's home page.
+
+```bash
+Compiled successfully!
+
+You can now view markdownchat in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.104:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
 ```
 
