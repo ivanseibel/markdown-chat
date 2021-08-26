@@ -78,4 +78,12 @@ To create a production build, use npm run build.
 
 ## 2. Main Technologies
 
-Describing...
+### 2.1. Hooks
+
+After five years of the project, the React.js team realized that the use of classes brought some types of problems that hindered productivity, the reuse of components and even the learning curve for new developers (since Javascript `this` can have a concept somewhat different from other languages).
+
+With the creation of version 16.8 a new paradigm called Hooks was introduced that, in general terms, allows you to use the state and other features of React without writing a class.
+
+You can still program in React by classes, but there is a global trend of projects moving to the hook-based model and, after all, who am I to question the motives of the team that maintains the React.js project :smiley:
+
+### 2.2.
