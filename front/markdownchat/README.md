@@ -10,6 +10,7 @@
     - [1.1.4. Environment variables](#114-environment-variables)
     - [1.1.5. Run the project](#115-run-the-project)
 - [2. Main Technologies](#2-main-technologies)
+  - [2.1. Hooks](#21-hooks)
 
 
 ## 1. How to Run
