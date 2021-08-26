@@ -9,6 +9,8 @@
     - [1.1.3. Installing Javascript libraries](#113-installing-javascript-libraries)
     - [1.1.4. Environment variables](#114-environment-variables)
     - [1.1.5. Run the project](#115-run-the-project)
+- [2. Main Technologies](#2-main-technologies)
+
 
 ## 1. How to Run
 
@@ -74,3 +76,6 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
+## 2. Main Technologies
+
+Describing...
