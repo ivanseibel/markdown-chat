@@ -7,7 +7,7 @@
     - [1.1.1. Let's talk about Create React App](#111-lets-talk-about-create-react-app)
     - [1.1.2. Node and npm](#112-node-and-npm)
     - [1.1.3. Installing Javascript libraries](#113-installing-javascript-libraries)
-    - [1.1.4. Environment variable](#114-environment-variable)
+    - [1.1.4. Environment variables](#114-environment-variables)
     - [1.1.5. Run the project](#115-run-the-project)
 
 ## 1. How to Run
@@ -44,9 +44,13 @@ Now you are able to install all Javascript dependencies for your project.
 # npm install
 ```
 
-#### 1.1.4. Environment variable
+#### 1.1.4. Environment variables
 
-Describing...
+One of the advantages of using the `create-react-app` script is that it allows us to custom inject variables configured in the server environment. In this project I'm using an environment variable to store the base url for HTTP requests and also for WebSocket connections.
+
+If you are running this project locally, the environment variables can be set via the `.env.development.local` file. You will notice that this file is not available in the project, but I have kept a template called `.env.template` that contains the variable names and you will only have to change its contents.
+
+If you are in a production environment, just create the variables in the service that will provide access to the project, build the files and the variables will be automatically injected into the Javascript files.
 
 #### 1.1.5. Run the project
 
