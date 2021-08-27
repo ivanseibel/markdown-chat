@@ -104,6 +104,13 @@ In this project, I chose to use a context to centralize the states related to th
 Adopting centralized state management with the Context API allowed route control with `react-router-dom` to perform user redirection automatically according to the state of the WebSocket. In addition, the `home` and `room` pages can transparently access shared methods and states as if they were implemented within those pages.
 
 ### 2.3. CSS
+
+Well, in my original idea I imagined using some kind of framework, market design system or some React library for functional styles in order to save time, but as soon as I started working I realized that one of the most fun parts would be building the styles a from total zero.
+
+From there, the design of this project was built using exclusively pure CSS without the help of other tools and according to the "mobile first" paradigm.
+
+Unfortunately time didn't allow me to work on prototype screens before starting development, so the design was thought out and implemented directly in the code with the idea of prioritizing ease of use and minimalism of the UI.
+
 ### 2.4. WebSocket
 ### 2.5. Markdown
 
