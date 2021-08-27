@@ -11,6 +11,10 @@
     - [1.1.5. Run the project](#115-run-the-project)
 - [2. Main Technologies](#2-main-technologies)
   - [2.1. Hooks](#21-hooks)
+  - [2.2. Context API]()
+  - [2.3. CSS]()
+  - [2.4. WebSocket]()
+  - [2.5. Markdown]()
 
 
 ## 1. How to Run
@@ -87,4 +91,11 @@ With the creation of version 16.8 a new paradigm called Hooks was introduced tha
 
 You can still program in React by classes, but there is a global trend of projects moving to the hook-based model and, after all, who am I to question the motives of the team that maintains the React.js project :smiley:
 
-### 2.2.
+### 2.2. Context API
+
+
+
+### 2.3. CSS
+### 2.4. WebSocket
+### 2.5. Markdown
+
