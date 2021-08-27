@@ -11,10 +11,10 @@
     - [1.1.5. Run the project](#115-run-the-project)
 - [2. Main Technologies](#2-main-technologies)
   - [2.1. Hooks](#21-hooks)
-  - [2.2. Context API]()
-  - [2.3. CSS]()
-  - [2.4. WebSocket]()
-  - [2.5. Markdown]()
+  - [2.2. Context API](#22-context-api)
+  - [2.3. CSS](#23-css)
+  - [2.4. WebSocket](#24-websocket)
+  - [2.5. Markdown](#25-markdown)
 
 
 ## 1. How to Run
