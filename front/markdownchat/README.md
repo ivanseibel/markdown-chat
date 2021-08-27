@@ -93,7 +93,11 @@ You can still program in React by classes, but there is a global trend of projec
 
 ### 2.2. Context API
 
+In general terms, we can say that the main feature of the Context API is to offer the possibility to share states globally within the component tree.
 
+In this project, I chose to use a context to centralize the states related to the WebSocket connection because this allowed me to easily access the necessary methods and states without having to pass props between components.
+
+Adopting centralized state management with the Context API allowed route control with `react-router-dom` to perform user redirection automatically according to the state of the WebSocket. In addition, the `home` and `room` pages can transparently access shared methods and states as if they were implemented within those pages.
 
 ### 2.3. CSS
 ### 2.4. WebSocket
