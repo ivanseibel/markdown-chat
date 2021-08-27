@@ -113,7 +113,7 @@ Unfortunately time didn't allow me to work on prototype screens before starting 
 
 ### 2.4. WebSocket
 
-Through the WebSocket object, Javascript offers us a complete API to communicate with the server with all the attributes, methods and events that we could possibly need. Implementing a client application with WebSocket is not complex and relies on a few flows, to understand it better you might want to take a look at the documentation provided by Mozilla [here](https://developer.mozilla.org/en- US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications).
+Through the WebSocket object, Javascript offers us a complete API to communicate with the server with all the attributes, methods and events that we could possibly need. Implementing a client application with WebSocket is not complex and relies on a few flows, to understand it better you might want to take a look at the documentation provided by Mozilla [here](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications).
 
 In this project, I chose to use a library called `react-use-websocket` which uses Javascript's WebSocket object and offers some extra facilities when implementing the methods using a React hook. For more information about this library, you can access the project link here on Github: [github.com/robtaussig/react-use-websocket](https://github.com/robtaussig/react-use-websocket).
 
