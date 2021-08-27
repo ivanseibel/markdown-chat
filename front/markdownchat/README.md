@@ -95,6 +95,10 @@ You can still program in React by classes, but there is a global trend of projec
 
 In general terms, we can say that the main feature of the Context API is to offer the possibility to share states globally within the component tree.
 
+Let's take a quick look at the definition I got from the official website at [reactjs.org/docs/context.html](https://reactjs.org/docs/context.html):
+
+> In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
+
 In this project, I chose to use a context to centralize the states related to the WebSocket connection because this allowed me to easily access the necessary methods and states without having to pass props between components.
 
 Adopting centralized state management with the Context API allowed route control with `react-router-dom` to perform user redirection automatically according to the state of the WebSocket. In addition, the `home` and `room` pages can transparently access shared methods and states as if they were implemented within those pages.
