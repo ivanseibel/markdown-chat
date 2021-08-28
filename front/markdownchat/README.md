@@ -188,3 +188,5 @@ The styles that color and beautify this page are available in a `styles.css` fil
 - `useEffect`: This React hook is used in two specific situations with different goals.
    - Automatic scroll: we monitor incoming messages so the screen can be scrolled automatically each time there is a new message.
    - User list auto hide: when the screen has less than 600px available for rendering room content, the user list is automatically hidden.
+- `handleOnChange`: Updates the state that hold the message.
+- `handleMessageInputKeyDown`: User can send a message using the combination of `Ctrl+Enter` keys.
