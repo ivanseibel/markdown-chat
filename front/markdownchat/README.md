@@ -176,3 +176,7 @@ Implements the user input screen where he can enter a username and the name of t
 
 - `handleOnChange`: Updates the states that hold the username and the chosen room as the user types the information on the screen.
 
+#### 4.1.2. front/markdownchat/src/ui/pages/room/Room.page.jsx
+
+Implements the chat room where a logged in user can see who the other users are and send messages to the room using plain text or text with Markdown syntax (and emojis :smile:).
+
