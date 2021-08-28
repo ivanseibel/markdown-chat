@@ -145,3 +145,5 @@ A React Context that is responsible for providing the methods, states and status
 - `onMessageHandler`: Handler responsible for handling the data package sent by the server and storing it in the room's message history, in addition to keeping the list of connected users updated.
 - `handleSendMessage`: Handler that sends messages to the server.
 - `handleConnect`: Handler to keep states in case connection was successfully.
+
+### 3.2. front/markdownchat/src/routes/index.jsx

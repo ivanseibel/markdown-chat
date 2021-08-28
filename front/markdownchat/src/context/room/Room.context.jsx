@@ -62,6 +62,7 @@ export const RoomProvider = ({ children }) => {
     }
   }, [isConnected, sendJsonMessage, signedUser])
 
+  // Handler to keep states in case connection was successfully
   const handleConnect = useCallback(async (username, room) => {
 
     if (!isConnected) {
