@@ -143,3 +143,5 @@ A React Context that is responsible for providing the methods, states and status
 
 - `canConnect`: Lets you check if the username is available for the requested room. If the query returns a valid user to the room being consulted, or an error occurs, the user will be prevented from connecting.
 - `onMessageHandler`: Handler responsible for handling the data package sent by the server and storing it in the room's message history, in addition to keeping the list of connected users updated.
+- `handleSendMessage`: Handler that sends messages to the server.
+- `handleConnect`: Handler to keep states in case connection was successfully.

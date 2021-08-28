@@ -14,6 +14,7 @@ export const RoomProvider = ({ children }) => {
   const [signedRoom, setSignedRoom] = useState('');
   const [usersList, setUserList] = useState([]);
 
+  // Checks if username is available and if connection is ready on server
   const canConnect = useCallback(async ({ username, room }) => {
     try {
       const response = await api.get(`/get_signed_user/${room}/${username}`);
@@ -25,6 +26,7 @@ export const RoomProvider = ({ children }) => {
     }
   }, []);
 
+  // Handler for new data coming from the server
   const onMessageHandler = useCallback((event) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
@@ -49,6 +51,7 @@ export const RoomProvider = ({ children }) => {
     [ReadyState.UNINSTANTIATED]: 'Uninstantiated',
   }[readyState];
 
+  // Handler that sends messages to the server
   const handleSendMessage = useCallback((message) => {
     if (message.length > 0 && isConnected) {
       sendJsonMessage({
