@@ -172,3 +172,7 @@ Create an instance of axios so that it can be shared with the application. axios
 
 #### 4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx
 
+Implements the user input screen where he can enter a username and the name of the room he wants to connect to. The method of connecting to the room is provided by the context described above.
+
+- `handleOnChange`: Updates the states that hold the username and the chosen room as the user types the information on the screen.
+
