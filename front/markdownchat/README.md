@@ -206,12 +206,12 @@ The styles that color and beautify this page are available in a `styles.css` fil
 
 ### 5.1. Home
 
-<table>
+<table border="0">
   <tr>
     <td>
-      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/home-1.png" alt="home desktop" width="50%">    </td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/home-1.png" alt="home desktop">    </td>
     <td>
-      <img src="https://github.com/ivanseibel/markdown-chat/blob/2174253aad568ca338ab22dff665b1b88ddeb25c/front/markdownchat/src/static/screencaptures/home-mobile-1.png" alt="home mobile" width="25%">
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/2174253aad568ca338ab22dff665b1b88ddeb25c/front/markdownchat/src/static/screencaptures/home-mobile-1.png" alt="home mobile">
     </td>
   </tr>
 </table>
