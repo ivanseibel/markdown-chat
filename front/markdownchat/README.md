@@ -16,9 +16,9 @@
   - [2.4. WebSocket](#24-websocket)
   - [2.5. Markdown](#25-markdown)
 - [3. Details About the Code](#3-details-about-the-code)
-  - [3.1. Context](#31context)
+  - [3.1. Context](#31-context)
     - [3.1.1 front/markdownchat/src/context/room/Room.context.jsx](#311-frontmarkdownchatsrccontextroomroomcontextjsx)
-  - [3.2. Routes](#32routes)
+  - [3.2. Routes](#32-routes)
     - [3.2.1 front/markdownchat/src/routes/index.jsx](#321-frontmarkdownchatsrcroutesindexjsx)
 
 ## 1. How to Run
