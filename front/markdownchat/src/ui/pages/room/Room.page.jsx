@@ -10,7 +10,7 @@ import './styles.css';
 
 export function Room() {
   const [message, setMessage] = useState('');
-  const [showUsers, setShowMenu] = useState(false);
+  const [showUsers, setShowMenu] = useState(window.innerWidth >= 600);
   const {
     isConnected,
     handleSendMessage,
@@ -30,7 +30,7 @@ export function Room() {
   useEffect(() => {
     const handleResize = () => {
       const { innerWidth } = window;
-      setShowMenu(innerWidth > 600);
+      setShowMenu(innerWidth >= 600);
     }
 
     window.addEventListener('resize', handleResize);
