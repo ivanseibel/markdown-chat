@@ -22,6 +22,9 @@
     - [3.2.1 front/markdownchat/src/routes/index.jsx](#321-frontmarkdownchatsrcroutesindexjsx)
   - [3.3. Services](#33-services)
     - [3.3.1. front/markdownchat/src/services/api.js](#331-frontmarkdownchatsrcservicesapijs)
+  - [4.1. UI](#41-UI)
+    - [4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#411-frontmarkdownchatsrcuipageshomeHomepagejsx)
+
 
 ## 1. How to Run
 
@@ -165,6 +168,7 @@ Responsible for automatically redirecting the user between home and chat room sc
 
 Create an instance of axios so that it can be shared with the application. axios is responsible for providing an abstraction of the [Fetch API](https://www.w3schools.com/js/js_api_fetch.asp), adding improvements and extra functionality.
 
-### 4.1 UI
+### 4.1. UI
 
-#
+#### 4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx
+
