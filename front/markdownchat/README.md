@@ -246,5 +246,14 @@ The styles that color and beautify this page are available in a `styles.css` fil
       <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/room-6.png" alt="room-6">
     </td>
   </tr>
+
+  <tr>
+    <td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/room-mobile-1.png" alt="room-mobile-1">
+    </td>
+    <td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/room-mobile-2.png" alt="room-mobile-2">
+    </td>
+  </tr>
 </table>
 
