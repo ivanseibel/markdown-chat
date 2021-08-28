@@ -25,6 +25,9 @@
   - [4.1. UI](#41-UI)
     - [4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#411-frontmarkdownchatsrcuipageshomeHomepagejsx)
     - [4.1.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#412-frontmarkdownchatsrcuipagesroomroompagejsx)
+- [5. Screenshots](#5-screenshots)
+  - [5.1. Home](#51-home)
+  - [5.2. Room](#52-room)
 
 ## 1. How to Run
 
@@ -198,3 +201,11 @@ The styles that color and beautify this page are available in a `styles.css` fil
   - `signedRoom`: room name where the user is connected.
   - `signedUser`: username who is connected.
   - `usersList`: users name list.
+
+## 5. Screenshots
+
+### 5.1. Home
+
+### 5.2. Room
+
+
