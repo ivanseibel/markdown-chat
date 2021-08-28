@@ -16,8 +16,10 @@
   - [2.4. WebSocket](#24-websocket)
   - [2.5. Markdown](#25-markdown)
 - [3. Details About the Code](#3-details-about-the-code)
-  - [3.1. front/markdownchat/src/context/room/Room.context.jsx](#31-frontmarkdownchatsrccontextroomroomcontextjsx)
-  - [3.2. front/markdownchat/src/routes/index.jsx](#32-frontmarkdownchatsrcroutesindexjsx)
+  - [3.1. Context](#31context)
+    - [3.1.1 front/markdownchat/src/context/room/Room.context.jsx](#311-frontmarkdownchatsrccontextroomroomcontextjsx)
+  - [3.2. Routes](#32routes)
+    - [3.2.1 front/markdownchat/src/routes/index.jsx](#321-frontmarkdownchatsrcroutesindexjsx)
 
 ## 1. How to Run
 
@@ -138,7 +140,9 @@ If you want to better understand what you can do with these two libraries, I rec
 
 ## 3. Details About the Code
 
-### 3.1. front/markdownchat/src/context/room/Room.context.jsx
+### 3.1. Context
+
+#### 3.1.1 front/markdownchat/src/context/room/Room.context.jsx
 
 A React Context that is responsible for providing the methods, states and status that allow managing the WebSocket in a centralized way from anywhere in the application. From this context we can also make HTTP requests to retrieve important information about users, rooms, etc.
 
@@ -147,4 +151,6 @@ A React Context that is responsible for providing the methods, states and status
 - `handleSendMessage`: Handler that sends messages to the server.
 - `handleConnect`: Handler to keep states in case connection was successfully.
 
-### 3.2. front/markdownchat/src/routes/index.jsx
+### 3.2. Routes
+
+### 3.2.1 front/markdownchat/src/routes/index.jsx
