@@ -121,3 +121,13 @@ Next, in the code detail, I'll make a more detailed explanation on how I used th
 
 ### 2.5. Markdown
 
+Originally the idea was that messages would be exchanged using only plain text without formatting, the main objective would be just to demonstrate communication using WebSocket with a web application. While building and testing the web client I realized that it could be a lot more fun to make and use if you could use text formatting and other cool features in the messages. After a quick search, Markdown was the best answer I could find for this need.
+
+The library chosen for this purpose was `react-markdown`, which implements some improvements using the `remark` parser as a base. In fact, `remark` was considered by [www.npmtrends.com](https://www.npmtrends.com/remark-parse-vs-marked-vs-markdown-it) as the most popular Markdown parser in the world, so using that combination seemed like a really good choice.
+
+But there's another reason I chose `react-markdown` to turn Markdown markup into HTML: its flexibility, since we can apply `remark` plugins extending its capabilities. This is really cool and will allow the project to scale up what can be offered to the user to make the chat more fun and functional.
+
+If you want to better understand what you can do with these two libraries, I recommend visiting their projects here on Github:
+
+- [react-markdown](https://github.com/remarkjs/react-markdown)
+- [remark](https://github.com/remarkjs/remark)
