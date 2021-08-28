@@ -209,28 +209,24 @@ The styles that color and beautify this page are available in a `styles.css` fil
 <table>
   <tr>
     <td>
-      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/home-1.png" alt="home desktop">    </td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/home-1.png" alt="home-1.png">
+    </td>
     <td>
-      <img src="https://github.com/ivanseibel/markdown-chat/blob/2174253aad568ca338ab22dff665b1b88ddeb25c/front/markdownchat/src/static/screencaptures/home-mobile-1.png" alt="home mobile">
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/2174253aad568ca338ab22dff665b1b88ddeb25c/front/markdownchat/src/static/screencaptures/home-mobile-1.png" alt="home-mobile-1.png">
     </td>
   </tr>
 </table>
 
 ### 5.2. Room
 
-<div>
-  <div>
-  </div>
-  <div>
-  </div>
-  <div>
-  </div>
-
-  <div>
-  </div>
-  <div>
-  </div>
-  <div>
-  </div>
-</div>
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/room-1.png" alt="room-1">
+    </td>
+    <td>
+      <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/room-2.png" alt="room desktop">
+    </td>
+  </tr>
+</table>
 
