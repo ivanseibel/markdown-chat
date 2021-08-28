@@ -24,7 +24,7 @@
     - [3.3.1. front/markdownchat/src/services/api.js](#331-frontmarkdownchatsrcservicesapijs)
   - [4.1. UI](#41-UI)
     - [4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#411-frontmarkdownchatsrcuipageshomeHomepagejsx)
-
+    - [4.1.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#412-frontmarkdownchatsrcuipagesroomroompagejsx)
 
 ## 1. How to Run
 
