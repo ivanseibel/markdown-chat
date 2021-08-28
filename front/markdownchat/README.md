@@ -153,6 +153,6 @@ A React Context that is responsible for providing the methods, states and status
 
 ### 3.2. Routes
 
-### 3.2.1 front/markdownchat/src/routes/index.jsx
+#### 3.2.1 front/markdownchat/src/routes/index.jsx
 
 Responsible for automatically redirecting the user between home and chat room screens. If the user has just arrived and does not yet have a valid connection to a room, he will be directed to the Home page. If he has already entered a valid user and a valid room and successfully obtained a WebSocket connection, he will be directed to the respective room page.
