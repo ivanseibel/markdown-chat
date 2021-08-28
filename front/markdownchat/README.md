@@ -15,7 +15,7 @@
   - [2.3. CSS](#23-css)
   - [2.4. WebSocket](#24-websocket)
   - [2.5. Markdown](#25-markdown)
-
+- [3. Details About the Code](#3-details-about-the-code)
 
 ## 1. How to Run
 
@@ -133,3 +133,6 @@ If you want to better understand what you can do with these two libraries, I rec
 
 - [react-markdown](https://github.com/remarkjs/react-markdown)
 - [remark](https://github.com/remarkjs/remark)
+
+## 3. Details About the Code
+
