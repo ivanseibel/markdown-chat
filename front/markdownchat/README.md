@@ -20,6 +20,8 @@
     - [3.1.1 front/markdownchat/src/context/room/Room.context.jsx](#311-frontmarkdownchatsrccontextroomroomcontextjsx)
   - [3.2. Routes](#32-routes)
     - [3.2.1 front/markdownchat/src/routes/index.jsx](#321-frontmarkdownchatsrcroutesindexjsx)
+  - [3.3. Services](#33-services)
+    - [3.3.1. front/markdownchat/src/services/api.js](#331-frontmarkdownchatsrcservicesapijs)
 
 ## 1. How to Run
 
@@ -156,3 +158,13 @@ A React Context that is responsible for providing the methods, states and status
 #### 3.2.1 front/markdownchat/src/routes/index.jsx
 
 Responsible for automatically redirecting the user between home and chat room screens. If the user has just arrived and does not yet have a valid connection to a room, he will be directed to the Home page. If he has already entered a valid user and a valid room and successfully obtained a WebSocket connection, he will be directed to the respective room page.
+
+### 3.3. Services
+
+#### 3.3.1. front/markdownchat/src/services/api.js
+
+Create an instance of axios so that it can be shared with the application. axios is responsible for providing an abstraction of the [Fetch API](https://www.w3schools.com/js/js_api_fetch.asp), adding improvements and extra functionality.
+
+### 4.1 UI
+
+#
