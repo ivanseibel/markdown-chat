@@ -141,3 +141,4 @@ If you want to better understand what you can do with these two libraries, I rec
 A React Context that is responsible for providing the methods, states and status that allow managing the WebSocket in a centralized way from anywhere in the application. From this context we can also make HTTP requests to retrieve important information about users, rooms, etc.
 
 - `canConnect`: Lets you check if the username is available for the requested room. If the query returns a valid user to the room being consulted, or an error occurs, the user will be prevented from connecting.
+- `onMessageHandler`: Handler responsible for handling the data package sent by the server and storing it in the room's message history, in addition to keeping the list of connected users updated.
