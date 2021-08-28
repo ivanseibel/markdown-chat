@@ -190,3 +190,11 @@ The styles that color and beautify this page are available in a `styles.css` fil
    - User list auto hide: when the screen has less than 600px available for rendering room content, the user list is automatically hidden.
 - `handleOnChange`: Updates the state that hold the message.
 - `handleMessageInputKeyDown`: User can send a message using the combination of `Ctrl+Enter` keys.
+- `RoomContext`: Shares some states and methods that Room page need to work properly.
+  - `isConnected`: return true if user is connected and false if not.
+  - `handleSendMessage`: handler to send messages.
+  - `messageHistory`: message history to show on the screen.
+  - `handleConnect`: used to disconnect from the room.
+  - `signedRoom`: room name where the user is connected.
+  - `signedUser`: username who is connected.
+  - `usersList`: users name list.
