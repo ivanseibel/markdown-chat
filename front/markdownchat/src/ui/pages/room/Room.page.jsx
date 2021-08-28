@@ -10,7 +10,7 @@ import './styles.css';
 
 export function Room() {
   const [message, setMessage] = useState('');
-  const [showUsers, setShowMenu] = useState(true);
+  const [showUsers, setShowMenu] = useState(false);
   const {
     isConnected,
     handleSendMessage,
