@@ -206,7 +206,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
 
 ### 5.1. Home
 
-<table border=0 cellspacing=0>
+<table>
   <tr>
     <td>
       <img src="https://github.com/ivanseibel/markdown-chat/blob/e768cba5b4f516c5eb37489c5e8f6f4fc94aa9be/front/markdownchat/src/static/screencaptures/home-1.png" alt="home desktop">    </td>
