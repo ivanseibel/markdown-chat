@@ -24,7 +24,7 @@ export function Room() {
 
   useEffect(() => {
     const messageContainer = document.getElementById('messages-container');
-    messageContainer.scrollTop = messageContainer.scrollHeight;
+    messageContainer.scrollTop = messageContainer.scrollHeight + 100;
   }, [messageHistory]);
 
   useEffect(() => {
