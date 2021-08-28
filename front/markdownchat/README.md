@@ -125,7 +125,9 @@ Originally the idea was that messages would be exchanged using only plain text w
 
 The library chosen for this purpose was `react-markdown`, which implements some improvements using the `remark` parser as a base. In fact, `remark` was considered by [www.npmtrends.com](https://www.npmtrends.com/remark-parse-vs-marked-vs-markdown-it) as the most popular Markdown parser in the world, so using that combination seemed like a really good choice.
 
-But there's another reason I chose `react-markdown` to turn Markdown markup into HTML: its flexibility, since we can apply `remark` plugins extending its capabilities. This is really cool and will allow the project to scale up what can be offered to the user to make the chat more fun and functional.
+But what really made me choose this combination were two concerns that I know `react-markdown` is already taking care of very well: security and flexibility. I'll leave the link to the projects below so that you can get to know them better, but I want to make a clipping of a part of the `react-markdown` documentation that supports what I just said:
+
+> There are other ways for markdown in React out there so why use this one? The two main reasons are that they often rely on dangerouslySetInnerHTML or have bugs with how they handle markdown. react-markdown uses a syntax tree to build the virtual dom which allows for updating only the changing DOM instead of completely overwriting. react-markdown is 100% CommonMark (optionally GFM) compliant and has extensions to support custom syntax.
 
 If you want to better understand what you can do with these two libraries, I recommend visiting their projects here on Github:
 
