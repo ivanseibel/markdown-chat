@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useRef, useContext, useEffect } from 'react';
+import React, { useCallback, useState, useRef, useContext, useEffect, useMemo } from 'react';
 import ReactMarkdown from 'react-markdown'
 import { FiLogOut, FiSend, FiMenu } from 'react-icons/fi';
 import emoji from 'emoji-dictionary';
@@ -22,10 +22,14 @@ export function Room() {
   } = useContext(RoomContext);
   const messageInputRef = useRef(null);
 
+  const messageContainerHeight = useMemo(() => {
+    return document.getElementById('messages-container').scrollHeight;
+  }, []);
+
   useEffect(() => {
     const messageContainer = document.getElementById('messages-container');
-    messageContainer.scrollTop = messageContainer.scrollHeight + 100;
-  }, [messageHistory]);
+    messageContainer.scrollTop = messageContainerHeight;
+  }, [messageHistory, messageContainerHeight]);
 
   useEffect(() => {
     const handleResize = () => {
