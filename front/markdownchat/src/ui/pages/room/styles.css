@@ -243,9 +243,9 @@ img:not(.logo-room) {
 
 .markdown-container {
   display: flex;
-  /* max-width: 60%; */
   flex: 1;
   width: 100%;
+  flex-direction: column;
 }
 
 .md-content {
