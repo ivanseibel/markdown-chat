@@ -25,7 +25,7 @@
   - [3.4. UI](#34-UI)
     - [3.4.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#341-frontmarkdownchatsrcuipageshomeHomepagejsx)
     - [3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#342-frontmarkdownchatsrcuipagesroomroompagejsx)
-- [4. Short Captures of Key Features]()
+- [4. Short Captures of Key Features](#4-short-captures-of-key-features)
 
 ## 1. How to Run
 
@@ -201,3 +201,10 @@ The styles that color and beautify this page are available in a `styles.css` fil
   - `usersList`: users name list.
 
 ## 4. Short Captures of Key Features
+
+<p>
+  <figure>
+    <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif" width="50%">
+    <figcaption>1. Real-time communication using WebSockets.</figcaption>
+  </figure>
+</p>
