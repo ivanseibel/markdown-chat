@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useRef, useContext, useEffect, useMemo } from 'react';
+import React, { useCallback, useState, useRef, useContext, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown'
 import { FiLogOut, FiSend, FiMenu } from 'react-icons/fi';
 import emoji from 'emoji-dictionary';
