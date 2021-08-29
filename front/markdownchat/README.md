@@ -206,7 +206,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   <tr>
     <td align="center">
       <figure>
-        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif" width="100%">
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif">
         <br />
         <figcaption>1. Real-time communication using WebSockets.</figcaption>
       </figure>
