@@ -4,6 +4,7 @@ div.chat-room-container {
   flex-flow: column;
   height: 100%;
   background-color: #E5EEDA;
+  min-width: 360px;
 }
 
 div.chat-room-header-container {
@@ -130,7 +131,7 @@ ul.layout-list::-webkit-scrollbar {
   box-shadow: 5px 5px 5px gray;
   background-color: #DDA15E;
   opacity: 0.9;
-  max-width: 70%;
+  max-width: 320px;
   color: #283618;
   transition: margin-top 0.3s;
   display: flex;
@@ -194,7 +195,7 @@ textarea.chat-room-message-input {
   border: none;
   background-color: #283618;
   display: flex;
-  width: 50px; 
+  width: 50px;
   height: 50px;
   border-radius: 4px;
   align-items: center;
@@ -227,18 +228,95 @@ textarea.chat-room-message-input {
   background-color: #E5EEDA;
 }
 
-img {
-  max-width: 50%;
-  float: left;
+img:not(.logo-room) {
+  /* width: 300px;
+  height: 200px; */
+  width: 260px;
+  height: 173px;
+
+  object-fit: contain;
+  float: none;
   margin-right: 10px;
   border-radius: 4px;
+  margin-bottom: 5px;
 }
 
-@media (max-width: 600px) { 
+.markdown-container {
+  display: flex;
+  /* max-width: 60%; */
+  flex: 1;
+  width: 100%;
+}
+
+.md-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  width: 100%;
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+@media (max-width: 400px) {
   .message-box {
     max-width: 100%;
-  } 
+  }
+
+  img:not(.logo-room) {
+    /* width: 260px;
+    height: 173px; */
+    object-fit: contain;
+    float: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
 }
+
+@media (max-width: 760px) {
+  /* .message-box {
+    max-width: 100%;
+  } */
+
+  img:not(.logo-room) {
+    /* width: 260px;
+    height: 173px; */
+    object-fit: contain;
+    float: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+
+}
+
+/* @media (max-width: 760px) {
+  img:not(.logo-room) {
+    width: 280px;
+    height: 187px;
+    object-fit: contain;
+    float: none;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+} */
 
 .logo-room {
   width: 100px;
