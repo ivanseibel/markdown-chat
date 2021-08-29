@@ -74,9 +74,15 @@ export const RoomProvider = ({ children }) => {
       } else {
         alert("User is already logged in the room");
         setIsConnected(false);
+        setSignedUser('');
+        setSignedRoom('');
+        setUserList([]);
       }
     } else {
       setIsConnected(false);
+      setSignedUser('');
+      setSignedRoom('');
+      setUserList([]);
     }
 
     setMessageHistory([]);
