@@ -32,6 +32,7 @@
   - [4.4. The room should display a list of all users who are logged in there](#44-the-room-should-display-a-list-of-all-users-who-are-logged-in-there)
   - [4.5. When a new user enters or leaves the room, a message is displayed on the timeline](#45-When-a-new-user-enters-or-leaves-the-room-a-message-is-displayed-on-the-timeline)
   - [4.6. The room user list can be hidden and unhidden](#46-the-room-user-list-can-be-hidden-and-unhidden)
+  - [4.7. Users can format text using Markdown syntax](#47-users-can-format-text-using-markdown-syntax)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
