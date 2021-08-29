@@ -22,9 +22,10 @@
     - [3.2.1 front/markdownchat/src/routes/index.jsx](#321-frontmarkdownchatsrcroutesindexjsx)
   - [3.3. Services](#33-services)
     - [3.3.1. front/markdownchat/src/services/api.js](#331-frontmarkdownchatsrcservicesapijs)
-  - [4.1. UI](#41-UI)
-    - [4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#411-frontmarkdownchatsrcuipageshomeHomepagejsx)
-    - [4.1.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#412-frontmarkdownchatsrcuipagesroomroompagejsx)
+  - [3.4. UI](#34-UI)
+    - [3.4.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#341-frontmarkdownchatsrcuipageshomeHomepagejsx)
+    - [3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#342-frontmarkdownchatsrcuipagesroomroompagejsx)
+- [4. Short Captures of Key Features]()
 
 ## 1. How to Run
 
@@ -168,9 +169,9 @@ Responsible for automatically redirecting the user between home and chat room sc
 
 Create an instance of axios so that it can be shared with the application. axios is responsible for providing an abstraction of the [Fetch API](https://www.w3schools.com/js/js_api_fetch.asp), adding improvements and extra functionality.
 
-### 4.1. UI
+### 3.4. UI
 
-#### 4.1.1. front/markdownchat/src/ui/pages/home/Home.page.jsx
+#### 3.4.1. front/markdownchat/src/ui/pages/home/Home.page.jsx
 
 Implements the user input screen where he can enter a username and the name of the room he wants to connect to. The method of connecting to the room is provided by the context described above.
 
@@ -179,7 +180,7 @@ Implements the user input screen where he can enter a username and the name of t
 The styles that color and beautify this page are available in a `styles.css` file which is present in the same folder as the `Home.page.jsx` page.
 
 
-#### 4.1.2. front/markdownchat/src/ui/pages/room/Room.page.jsx
+#### 3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx
 
 Implements the chat room where a logged in user can see who the other users are and send messages to the room using plain text or text with Markdown syntax (and emojis :smile:).
 
@@ -198,3 +199,5 @@ The styles that color and beautify this page are available in a `styles.css` fil
   - `signedRoom`: room name where the user is connected.
   - `signedUser`: username who is connected.
   - `usersList`: users name list.
+
+## 4. Short Captures of Key Features
