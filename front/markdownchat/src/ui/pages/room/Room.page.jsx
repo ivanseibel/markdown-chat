@@ -21,15 +21,13 @@ export function Room() {
     signedUser,
   } = useContext(RoomContext);
   const messageInputRef = useRef(null);
-
-  const messageContainerHeight = useMemo(() => {
-    return document.getElementById('messages-container').scrollHeight;
-  }, []);
+  const messageListRef = useRef(null);
 
   useEffect(() => {
-    const messageContainer = document.getElementById('messages-container');
-    messageContainer.scrollTop = messageContainerHeight;
-  }, [messageHistory, messageContainerHeight]);
+    if (messageListRef.current) {
+      messageListRef.current.scrollTop = messageListRef.current.scrollHeight;
+    }
+  }, [messageListRef.current?.scrollHeight]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,7 +41,7 @@ export function Room() {
 
   const handleOnChange = useCallback((e) => {
     setMessage(e.target.value);
-  }, []);
+  }, [setMessage]);
 
   const handleMessageInputKeyDown = useCallback((e) => {
     if (e.key === 'Enter' && e.ctrlKey) {
@@ -52,6 +50,28 @@ export function Room() {
       messageInputRef.current.focus();
     }
   }, [handleSendMessage, message])
+
+  const MessageItem = useCallback(({ item }) => {
+    const messageItemClass = item.username === signedUser ? "message-item right" : "message-item";
+    const messageBoxClass = item.username === signedUser ? "message-box me" : "message-box";
+    const emojiSupport = item.message.replace(/:\w+:/gi, name => emoji.getUnicode(name));
+    return (
+      <li className={messageItemClass} key={item.number.toString()}>
+        <strong>{item.username}</strong>
+        <div className={messageBoxClass}>
+          <ReactMarkdown
+            className="markdown-container"
+            components={{
+              p: ({ node, ...props }) =>
+                <div className="md-content" {...props} />
+            }} >
+            {emojiSupport !== 'undefined' ? emojiSupport : item.message || ''}
+          </ReactMarkdown>
+          <p className="message-time">{item.time}</p>
+        </div>
+      </li>
+    );
+  }, [signedUser]);
 
   return (
     <div className="chat-room-container">
@@ -85,24 +105,8 @@ export function Room() {
               <FiMenu className="menu-icon" size={20} />
             </button>
           </div>
-          <ul className="layout-list" id="messages-container">
-            {messageHistory.map((item, index) => {
-              const messageItemClass = item.username === signedUser ? "message-item right" : "message-item";
-              const messageBoxClass = item.username === signedUser ? "message-box me" : "message-box";
-              const emojiSupport = item.message.replace(/:\w+:/gi, name => emoji.getUnicode(name));
-
-              return (
-                <li className={messageItemClass} key={index.toString()}>
-                  <strong>{item.username}</strong>
-                  <div className={messageBoxClass}>
-                    <ReactMarkdown className="markdown-container">
-                      {emojiSupport !== 'undefined' ? emojiSupport : item.message || ''}
-                    </ReactMarkdown>
-                    <p className="message-time">{item.time}</p>
-                  </div>
-                </li>
-              );
-            })}
+          <ul className="layout-list" id="messages-container" ref={messageListRef} >
+            {messageHistory.map((item) => <MessageItem item={item} />)}
           </ul>
         </div>
       </div>
