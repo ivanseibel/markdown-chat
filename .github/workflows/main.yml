@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Syncing branches
     steps:
+      - name: Teste
+        run: |
+          echo "The GitHub Action Secret will be masked:  "
+          echo ${{ secrets.GIT_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node
