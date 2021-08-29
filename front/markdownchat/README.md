@@ -241,3 +241,13 @@ The styles that color and beautify this page are available in a `styles.css` fil
     </td>
   </tr>
 </table>
+
+### 4.5. When a new user enters or leaves the room, a message is displayed on the timeline
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-05.gif" alt="feature-05.gif">
+    </td>
+  </tr>
+</table>
