@@ -4,10 +4,11 @@
       <style>
         div {
           width: 50%;
-
         }
       </style>
-      <img src="./feature-01.gif" alt="feature-01.gif"/>
+      <div>
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif"/>
+      </div>
     </div>
   </foreignObject>
 </svg>
