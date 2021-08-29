@@ -202,15 +202,14 @@ The styles that color and beautify this page are available in a `styles.css` fil
 
 ## 4. Short Captures of Key Features
 
-![feature-01.svg](https://github.com/ivanseibel/markdown-chat/blob/main/front/markdownchat/src/static/screencaptures/feature-01.svg)
-
-<!-- <table>
+<table>
   <tr>
     <td align="center">
       <figure>
         <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif" width="50%">
+        <br />
         <figcaption>1. Real-time communication using WebSockets.</figcaption>
       </figure>
     </td>
   </tr>
-</table> -->
+</table>
