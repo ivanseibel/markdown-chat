@@ -30,6 +30,7 @@
   - [4.2. To access a room it is necessary to inform a username and the name of the room](#42-to-access-a-room-it-is-necessary-to-inform-a-username-and-the-name-of-the-room)
   - [4.3. A room cannot contain more than one user with the same name](#43-a-room-cannot-contain-more-than-one-user-with-the-same-name)
   - [4.4. The room should display a list of all users who are logged in there](#44-the-room-should-display-a-list-of-all-users-who-are-logged-in-there)
+  - [4.5. When a new user enters or leaves the room, a message is displayed on the timeline](#45-When-a-new-user-enters-or-leaves-the-room-a-message-is-displayed-on-the-timeline)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
