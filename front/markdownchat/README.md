@@ -34,7 +34,7 @@
   - [4.6. The room user list can be hidden and unhidden](#46-the-room-user-list-can-be-hidden-and-unhidden)
   - [4.7. Users can format text using Markdown syntax](#47-users-can-format-text-using-markdown-syntax)
   - [4.8. Text input of messages allows writing on multiple lines](#48-text-input-of-messages-allows-writing-on-multiple-lines)
-  - [4.9. Users can send the message Ctrl+Enter or by clicking the Send button](#49-users-can-send-the-message-ctrl+enter-or-by-clicking-the-send-button)
+  - [4.9. Users can send the message Ctrl+Enter or by clicking the Send button](#49-users-can-send-the-message-ctrlenter-or-by-clicking-the-send-button)
 
 ## 1. How to Run
 
