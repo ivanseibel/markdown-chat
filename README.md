@@ -47,7 +47,7 @@ Instead of starting with a Javascript application "from scratch", the presentati
 5. When a new user enters or leaves the room, a message is displayed on the timeline.
 6. The room user list can be hidden and unhidden.
 7. Users can format text using Markdown syntax.
-8. Text input from messages allows writing on multiple lines.
+8. Text input of messages allows writing on multiple lines.
 9. Users can send the message using the Ctrl + Enter key combination or by clicking the Send button.
 10. Responsive design following the "mobile-first" paradigm.
 
