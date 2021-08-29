@@ -202,9 +202,9 @@ The styles that color and beautify this page are available in a `styles.css` fil
 
 ## 4. Short Captures of Key Features
 
-<table align="center" width="50%">
+<table>
   <tr>
-    <td>
+    <td align="center">
       <figure>
         <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif">
         <br />
