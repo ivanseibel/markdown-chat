@@ -221,3 +221,13 @@ The styles that color and beautify this page are available in a `styles.css` fil
     </td>
   </tr>
 </table>
+
+### 4.3. A room cannot contain more than one user with the same name
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-03.gif" alt="feature-03.gif">
+    </td>
+  </tr>
+</table>
