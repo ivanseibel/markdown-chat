@@ -31,8 +31,8 @@ export const RoomProvider = ({ children }) => {
     const { data } = event;
     const { message, username, users } = JSON.parse(data);
     const time = format(new Date(), 'MM/dd/yyyy HH:mm');
-
-    const newMessageHistory = [...messageHistory, { message, username, time }];
+    const number = messageHistory.length;
+    const newMessageHistory = [...messageHistory, { message, username, time, number }];
 
     setUserList(users);
     setMessageHistory(newMessageHistory);
