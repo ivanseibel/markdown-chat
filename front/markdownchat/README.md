@@ -231,3 +231,13 @@ The styles that color and beautify this page are available in a `styles.css` fil
     </td>
   </tr>
 </table>
+
+### 4.4. The room should display a list of all users who are logged in there
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-04.gif" alt="feature-04.gif">
+    </td>
+  </tr>
+</table>
