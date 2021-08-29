@@ -202,7 +202,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
 
 ## 4. Short Captures of Key Features
 
-<table border=0>
+<table border=0 cellspacing=0 cellpadding=0>
   <tr>
     <td align="center">
       <figure>
