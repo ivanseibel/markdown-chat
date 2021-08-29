@@ -208,7 +208,19 @@ The styles that color and beautify this page are available in a `styles.css` fil
       <figure>
         <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-01.gif" alt="feature-01.gif">
         <br />
-        <figcaption>1. Real-time communication using WebSockets.</figcaption>
+        <figcaption>
+          1. Real-time communication using WebSockets.
+        </figcaption>
+      </figure>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <figure>
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-02.gif" alt="feature-02.gif">
+        <br />
+        <figcaption>
+          2. To access a room it is necessary to inform a username and the name of the room.</figcaption>
       </figure>
     </td>
   </tr>
