@@ -31,6 +31,7 @@
   - [4.3. A room cannot contain more than one user with the same name](#43-a-room-cannot-contain-more-than-one-user-with-the-same-name)
   - [4.4. The room should display a list of all users who are logged in there](#44-the-room-should-display-a-list-of-all-users-who-are-logged-in-there)
   - [4.5. When a new user enters or leaves the room, a message is displayed on the timeline](#45-When-a-new-user-enters-or-leaves-the-room-a-message-is-displayed-on-the-timeline)
+  - [4.6. The room user list can be hidden and unhidden](#46-the-room-user-list-can-be-hidden-and-unhidden)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
