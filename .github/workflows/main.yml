@@ -6,10 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Syncing branches
     steps:
-      - name: Teste
-        run: |
-          echo "The GitHub Action Secret will be masked:  "
-          echo ${{ secrets.GIT_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Set up Node
@@ -18,7 +14,7 @@ jobs:
           node-version: 12
       - name: Opening pull request
         id: pull
-        uses: tretuna/sync-branches@1.2.0
+        uses: lawnstarter/sync-branches@1.2.1-rc
         with:
           GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
           FROM_BRANCH: "main"
