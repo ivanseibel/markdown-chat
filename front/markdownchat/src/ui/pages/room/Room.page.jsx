@@ -63,7 +63,7 @@ export function Room() {
             className="markdown-container"
             components={{
               p: ({ node, ...props }) =>
-                <div className="md-content" {...props} />
+                <p className="md-content" {...props} />
             }} >
             {emojiSupport !== 'undefined' ? emojiSupport : item.message || ''}
           </ReactMarkdown>
