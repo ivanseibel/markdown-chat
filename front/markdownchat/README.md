@@ -26,7 +26,7 @@
     - [3.4.1. front/markdownchat/src/ui/pages/home/Home.page.jsx](#341-frontmarkdownchatsrcuipageshomeHomepagejsx)
     - [3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#342-frontmarkdownchatsrcuipagesroomroompagejsx)
 - [4. Short Captures of Key Features](#4-short-captures-of-key-features)
-
+  - [4.1. Real-time communication using WebSockets](#41-real-time-communication-using-websockets)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
@@ -278,6 +278,16 @@ The styles that color and beautify this page are available in a `styles.css` fil
   <tr>
     <td align="center">
         <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-08.gif" alt="feature-08.gif">
+    </td>
+  </tr>
+</table>
+
+### 4.9. Users can send the message Ctrl + Enter or by clicking the Send button
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://github.com/ivanseibel/markdown-chat/blob/7d398ad5fcc4ae9e4fe5aa43df6333a0cfaf85a3/front/markdownchat/src/static/screencaptures/feature-09.gif" alt="feature-09.gif">
     </td>
   </tr>
 </table>

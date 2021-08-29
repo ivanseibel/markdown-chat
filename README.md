@@ -48,7 +48,7 @@ Instead of starting with a Javascript application "from scratch", the presentati
 6. The room user list can be hidden and unhidden.
 7. Users can format text using Markdown syntax.
 8. Text input of messages allows writing on multiple lines.
-9. Users can send the message using the Ctrl + Enter key combination or by clicking the Send button.
+9. Users can send the message Ctrl + Enter or by clicking the Send button.
 10. Responsive design following the "mobile-first" paradigm.
 
 # Architectural Detailing
