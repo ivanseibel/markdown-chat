@@ -27,6 +27,8 @@
     - [3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx](#342-frontmarkdownchatsrcuipagesroomroompagejsx)
 - [4. Short Captures of Key Features](#4-short-captures-of-key-features)
   - [4.1. Real-time communication using WebSockets](#41-real-time-communication-using-websockets)
+  - [4.2. To access a room it is necessary to inform a username and the name of the room](#42-to-access-a-room-it-is-necessary-to-inform-a-username-and-the-name-of-the-room)
+  - [4.3. A room cannot contain more than one user with the same name](#43-a-room-cannot-contain-more-than-one-user-with-the-same-name)
 ## 1. How to Run
 
 ### 1.1. Install Dependencies
