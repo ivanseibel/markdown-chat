@@ -46,6 +46,7 @@
       - [Consumer methods](#consumer_methods)
     - [3.1.3.2. back/markdownchat/chat/models.py](#3132_models)
     - [3.1.3.3. back/markdownchat/chat/routing.py](#3133_routing)
+    - [3.1.3.4. back/markdownchat/chat/urls.py](#3134_urls)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -227,7 +228,7 @@ Below I describe the main consumer methods and their purpose.
 
 - `websocket_urlpatterns`: Defines the patterns for the WebSocket request routes and their corresponding views.
 
-### 3.4. back/markdownchat/chat/urls.py
+#### 3.1.3.4. back/markdownchat/chat/urls.py <a name = "3134_urls"></a>
 
 - `urlpatterns`: Defines the patterns for the HTTP request routes and their corresponding views.
 
