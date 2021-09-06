@@ -16,17 +16,25 @@
   </a>
 </p>
 
-# Markdown Chat
+---
 
-A real-time multi room webchat that accepts Markdown syntax in messages sent by users.
+<p align="center">A real-time multi room webchat that accepts Markdown syntax in messages sent by users.
+    <br> 
+</p>
 
-# Motivations
+
+## 📝 Table of Contents
+
+- [1. Motivations](#1_motivations)
+  - [1.1. Back-End](11_back-end)
+
+# 1. Motivations <a name = "1_motivations"></a>
 
 The main motivation of this project was to understand how WebSocket could add value to a web application with Django by creating a real-time communication channel with the presentation layer.
 
 As a result, the presentation layer was separated from Django and implemented as a SPA (Single Page Application) to demonstrate how this kind of real communication takes place in this architectural model.
 
-## Back-End
+## 1.1. Back-End <a name = "11_back-end"></a>
 
 Developed with Python + Django, it basically provides the WebSocket connection service and a REST endpoint for queries. The WebSocket service is implemented through the "Channels" library for Django and the REST endpoint is provided by native Django features.
 
