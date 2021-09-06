@@ -173,7 +173,7 @@ Using a database system, in the near future we may save other types of informati
 
 You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
-## 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
+#### 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
 
 ### 3.1. back/markdownchat/chat/consumers.py
 
