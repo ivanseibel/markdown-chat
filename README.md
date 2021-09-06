@@ -40,6 +40,7 @@
     - [3.1.2.1. HTTP Requests (Django)](#3121_http_requests_django)
     - [3.1.2.2. WebSocket (Channels)](#3122_websocket_channels)
     - [3.1.2.3. Database (SQLite)](#3123_database_sqlite)
+  - [3.1.3. Details About the Code](#313_details_about_the_code)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -172,7 +173,7 @@ Using a database system, in the near future we may save other types of informati
 
 You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
-## 3. Details About the Code
+## 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
 
 ### 3.1. back/markdownchat/chat/consumers.py
 
