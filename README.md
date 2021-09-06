@@ -36,6 +36,7 @@
     - [3.1.1.2. Configurations](#3112_configurations)
     - [3.1.1.3. Migrations](#3113_migrations)
     - [3.1.1.4. Run the Server](#3114_run_the_server)
+  -[3.1.2. Main Technologies](#312_main_technologies)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -91,11 +92,11 @@ To install all of the dependencies you just have to run the following command us
 # pip install -r /path/to/requirements.txt
 ```
 
-### 3.1.1.2. Configurations <a name = "3112_configurations"></a>
+##### 3.1.1.2. Configurations <a name = "3112_configurations"></a>
 
 For security reasons I'm using .env files to the save secret key during programming time and the library that provides access to environment variables is `python-decouple`. You can rename file `.env.template` to `.env` and then put your security key inside and your Django app will be able to read it.
 
-### 3.1.1.3. Migrations <a name = "3113_migrations"></a>
+##### 3.1.1.3. Migrations <a name = "3113_migrations"></a>
 
 The next step is create the SQLite database and its entities using [Django Migrations](https://docs.djangoproject.com/en/3.2/topics/migrations/).
 
@@ -106,7 +107,7 @@ To do this, just run the following commands on your terminal inside the folder `
 # python3 manage.py migrate
 ```
 
-### 3.1.1.4. Run the Server <a name = "3114_run_the_server"></a>
+##### 3.1.1.4. Run the Server <a name = "3114_run_the_server"></a>
 
 Right now you'll be able to run the server to get your app ready to receive new connections.
 
@@ -124,7 +125,7 @@ Starting ASGI/Channels version 3.0.4 development server at http://127.0.0.1:8000
 Quit the server with CONTROL-C.
 ```
 
-## 2. Main Technologies
+#### 3.1.2. Main Technologies <a name = "312_main_technologies"></a>
 
 Basically, the back-end layer depends of three main technologies to implement the needed services: HTTP Requests, WebSocket and a Database.
 ### 2.1. HTTP Requests (Django)
