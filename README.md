@@ -36,7 +36,7 @@
     - [3.1.1.2. Configurations](#3112_configurations)
     - [3.1.1.3. Migrations](#3113_migrations)
     - [3.1.1.4. Run the Server](#3114_run_the_server)
-  -[3.1.2. Main Technologies](#312_main_technologies)
+  - [3.1.2. Main Technologies](#312_main_technologies)
 - [3.2. Front-End](#32_front-end)
 
  
