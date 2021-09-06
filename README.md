@@ -62,7 +62,7 @@ Instead of starting with a Javascript application "from scratch", the presentati
 9. Users can send the message Ctrl+Enter or by clicking the Send button.
 10. Responsive design following the "mobile-first" paradigm.
 
-# 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
+## 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
 
 [Back-End](https://github.com/ivanseibel/markdown-chat/blob/main/back/markdownchat/README.md)
 
