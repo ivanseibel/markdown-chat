@@ -41,6 +41,7 @@
     - [3.1.2.2. WebSocket (Channels)](#3122_websocket_channels)
     - [3.1.2.3. Database (SQLite)](#3123_database_sqlite)
   - [3.1.3. Details About the Code](#313_details_about_the_code)
+    - [3.1.3.1. back/markdownchat/chat/consumers.py](#3131_consumers)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -175,7 +176,7 @@ You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
 #### 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
 
-### 3.1. back/markdownchat/chat/consumers.py
+##### 3.1.3.1. back/markdownchat/chat/consumers.py <a name = "3131_consumers"></a>
 
 Overall, the consumer is responsible for providing a simplified way to handle the Channel's low-level ASGI implementation.
 
