@@ -39,6 +39,7 @@
   - [3.1.2. Main Technologies](#312_main_technologies)
     - [3.1.2.1. HTTP Requests (Django)](#3121_http_requests_django)
     - [3.1.2.2. WebSocket (Channels)](#3122_websocket_channels)
+    - [3.1.2.3. Database (SQLite)](#3123_database_sqlite)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -159,7 +160,7 @@ To make it easier to understand how Channels works, let's take a look at the dia
 </p>
 
 You can learn more about Channels at [channels.readthedocs.io](https://channels.readthedocs.io/en/stable/index.html).
-### 2.3. Database (SQLite)
+##### 3.1.2.3. Database (SQLite) <a name = "3123_database_sqlite"></a>
 
 There are some reasons to use a database in this project.
 
