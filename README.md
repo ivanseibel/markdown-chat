@@ -42,7 +42,7 @@
     - [3.1.2.3. Database (SQLite)](#3123_database_sqlite)
   - [3.1.3. Details About the Code](#313_details_about_the_code)
     - [3.1.3.1. back/markdownchat/chat/consumers.py](#3131_consumers)
-      - [3.1.3.1.1. Database methods](#31311_database_methods)
+      - [Database methods](#31311_database_methods)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -187,7 +187,7 @@ In addition, we have the option of working with synchronous code, as is Django's
 
 Below I describe the main consumer methods and their purpose.
 
-###### 3.1.3.1.1. Database methods: <a name = "31311_database_methods"></a>
+**Database methods:** <a name = "31311_database_methods"></a>
 
 - `get_users_list`: Returns do banco de dados the list of users logged into a specific room.
 - `get_user`: Checks no banco de dados if a specific user is logged into a specific room.
