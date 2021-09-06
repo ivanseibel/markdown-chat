@@ -48,6 +48,7 @@
     - [3.1.3.3. back/markdownchat/chat/routing.py](#3133_routing)
     - [3.1.3.4. back/markdownchat/chat/urls.py](#3134_urls)
     - [3.1.3.5. back/markdownchat/chat/views.py](#3135_views)
+    - [3.1.3.6. back/markdownchat/.env](#3136_env)
 - [3.2. Front-End](#32_front-end)
  
 # 1. Motivations <a name = "1_motivations"></a>
@@ -235,7 +236,7 @@ Below I describe the main consumer methods and their purpose.
 
 - `def get_signed_user`: Returns `true` if the requested user is already logged into a specific room and `false` if not. This endpoint is used so that the presentation layer can avoid two users with the same `username` in the same room.
 
-### 3.6. back/markdownchat/.env
+#### 3.1.3.6. back/markdownchat/.env <a name = "3136_env"></a>
 
 This file simulates the use of environment variables that would be created in a production environment. There is a file named .env.template that the developers could use to fill .env file according their development environment.
 
