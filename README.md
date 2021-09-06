@@ -28,6 +28,7 @@
 - [1. Motivations](#1_motivations)
   - [1.1. Back-End](#11_back-end)
   - [1.2. Front-End](#12_front-end)
+- [2. Main Features](#2_main_features)
 
 ## 1. Motivations <a name = "1_motivations"></a>
 
@@ -47,7 +48,7 @@ In general terms, it is a Javascript SPA (Single Page Application) that uses the
 
 Instead of starting with a Javascript application "from scratch", the presentation layer was built using the so-called "create-react-app" boilerplate, which adds advanced features to the project and some enablers that allow speed gain of development.
 
-# Main Features
+## 2. Main Features <a name = "2_main_features"></a>
 
 1. Real-time communication using WebSockets.
 2. To access a room it is necessary to inform a username and the name of the room.
