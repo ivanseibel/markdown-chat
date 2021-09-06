@@ -23,7 +23,7 @@
 </p>
 
 
-## 📝 Table of Contents
+# 📝 Table of Contents
 
 - [1. Motivations](#1_motivations)
   - [1.1. Back-End](#11_back-end)
@@ -42,30 +42,31 @@
     - [3.1.2.3. Database (SQLite)](#3123_database_sqlite)
   - [3.1.3. Details About the Code](#313_details_about_the_code)
     - [3.1.3.1. back/markdownchat/chat/consumers.py](#3131_consumers)
-      - [Database methods](#31311_database_methods)
+      - [Database methods](#database_methods)
+      - [Consumer methods](#consumer_methods)
 - [3.2. Front-End](#32_front-end)
 
  
 
-## 1. Motivations <a name = "1_motivations"></a>
+# 1. Motivations <a name = "1_motivations"></a>
 
 The main motivation of this project was to understand how WebSocket could add value to a web application with Django by creating a real-time communication channel with the presentation layer.
 
 As a result, the presentation layer was separated from Django and implemented as a SPA (Single Page Application) to demonstrate how this kind of real communication takes place in this architectural model.
 
-### 1.1. Back-End <a name = "11_back-end"></a>
+## 1.1. Back-End <a name = "11_back-end"></a>
 
 Developed with Python + Django, it basically provides the WebSocket connection service and a REST endpoint for queries. The WebSocket service is implemented through the "Channels" library for Django and the REST endpoint is provided by native Django features.
 
 An SQLite3 database was used as a means to persist and manage the list of connected users.
 
-### 1.2. Front-End <a name = "12_front-end"></a>
+## 1.2. Front-End <a name = "12_front-end"></a>
 
 In general terms, it is a Javascript SPA (Single Page Application) that uses the React JS library.
 
 Instead of starting with a Javascript application "from scratch", the presentation layer was built using the so-called "create-react-app" boilerplate, which adds advanced features to the project and some enablers that allow speed gain of development.
 
-## 2. Main Features <a name = "2_main_features"></a>
+# 2. Main Features <a name = "2_main_features"></a>
 
 1. Real-time communication using WebSockets.
 2. To access a room it is necessary to inform a username and the name of the room.
@@ -78,13 +79,13 @@ Instead of starting with a Javascript application "from scratch", the presentati
 9. Users can send the message Ctrl+Enter or by clicking the Send button.
 10. Responsive design following the "mobile-first" paradigm.
 
-## 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
+# 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
 
-### 3.1. Back-End <a name = "31_back-end"></a>
+## 3.1. Back-End <a name = "31_back-end"></a>
 
-#### 3.1.1. How to Run <a name = "311_how_to_run"></a>
+### 3.1.1. How to Run <a name = "311_how_to_run"></a>
 
-##### 3.1.1.1. Install Dependencies <a name = "3111_install_dependencies"></a>
+#### 3.1.1.1. Install Dependencies <a name = "3111_install_dependencies"></a>
 
 First of all you have to install python3 and pip to be able to run this project and install all of the dependencies.
 
@@ -98,11 +99,11 @@ To install all of the dependencies you just have to run the following command us
 # pip install -r /path/to/requirements.txt
 ```
 
-##### 3.1.1.2. Configurations <a name = "3112_configurations"></a>
+#### 3.1.1.2. Configurations <a name = "3112_configurations"></a>
 
 For security reasons I'm using .env files to the save secret key during programming time and the library that provides access to environment variables is `python-decouple`. You can rename file `.env.template` to `.env` and then put your security key inside and your Django app will be able to read it.
 
-##### 3.1.1.3. Migrations <a name = "3113_migrations"></a>
+#### 3.1.1.3. Migrations <a name = "3113_migrations"></a>
 
 The next step is create the SQLite database and its entities using [Django Migrations](https://docs.djangoproject.com/en/3.2/topics/migrations/).
 
@@ -113,7 +114,7 @@ To do this, just run the following commands on your terminal inside the folder `
 # python3 manage.py migrate
 ```
 
-##### 3.1.1.4. Run the Server <a name = "3114_run_the_server"></a>
+#### 3.1.1.4. Run the Server <a name = "3114_run_the_server"></a>
 
 Right now you'll be able to run the server to get your app ready to receive new connections.
 
@@ -131,10 +132,10 @@ Starting ASGI/Channels version 3.0.4 development server at http://127.0.0.1:8000
 Quit the server with CONTROL-C.
 ```
 
-#### 3.1.2. Main Technologies <a name = "312_main_technologies"></a>
+### 3.1.2. Main Technologies <a name = "312_main_technologies"></a>
 
 Basically, the back-end layer depends of three main technologies to implement the needed services: HTTP Requests, WebSocket and a Database.
-##### 3.1.2.1. HTTP Requests (Django) <a name = "3121_http_requests_django"></a>
+#### 3.1.2.1. HTTP Requests (Django) <a name = "3121_http_requests_django"></a>
 
 The first reason I adopted Django as a framework to develop this project was productivity. It's amazing how in just a few minutes you can have a working MVC application with very little code as soon as you install Django.
 
@@ -146,7 +147,7 @@ At another time I intend to replace Django with its REST version, since the proj
 
 You can learn more about Django at [www.djangoproject.com](https://www.djangoproject.com/).
 
-##### 3.1.2.2. WebSocket (Channels) <a name = "3122_websocket_channels"></a>
+#### 3.1.2.2. WebSocket (Channels) <a name = "3122_websocket_channels"></a>
 
 Channels description from Channels documentation.
 
@@ -163,7 +164,8 @@ To make it easier to understand how Channels works, let's take a look at the dia
 </p>
 
 You can learn more about Channels at [channels.readthedocs.io](https://channels.readthedocs.io/en/stable/index.html).
-##### 3.1.2.3. Database (SQLite) <a name = "3123_database_sqlite"></a>
+
+#### 3.1.2.3. Database (SQLite) <a name = "3123_database_sqlite"></a>
 
 There are some reasons to use a database in this project.
 
@@ -175,9 +177,9 @@ Using a database system, in the near future we may save other types of informati
 
 You can learn more about SQLite at [sqlite.org](https://sqlite.org/index.html).
 
-#### 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
+### 3.1.3. Details About the Code <a name = "313_details_about_the_code"></a>
 
-##### 3.1.3.1. back/markdownchat/chat/consumers.py <a name = "3131_consumers"></a>
+#### 3.1.3.1. back/markdownchat/chat/consumers.py <a name = "3131_consumers"></a>
 
 Overall, the consumer is responsible for providing a simplified way to handle the Channel's low-level ASGI implementation.
 
@@ -187,14 +189,14 @@ In addition, we have the option of working with synchronous code, as is Django's
 
 Below I describe the main consumer methods and their purpose.
 
-**Database methods:** <a name = "31311_database_methods"></a>
+**Database methods:** <a name = "database_methods"></a>
 
 - `get_users_list`: Returns do banco de dados the list of users logged into a specific room.
 - `get_user`: Checks no banco de dados if a specific user is logged into a specific room.
 - `add_user`: Add a new user to a specific room no banco de dados.
 - `remove_user`: Removes a specific user from a specific room in the database.
 
-#### 3.1.2. Consumer methods:
+**Consumer methods:** <a name = "consumer_methods"></a>
 
 - `connect`: When socket connection is created.
   - Get route data to identify room name and username.
