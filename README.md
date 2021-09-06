@@ -47,10 +47,9 @@
     - [3.1.3.2. back/markdownchat/chat/models.py](#3132_models)
     - [3.1.3.3. back/markdownchat/chat/routing.py](#3133_routing)
     - [3.1.3.4. back/markdownchat/chat/urls.py](#3134_urls)
+    - [3.1.3.5. back/markdownchat/chat/views.py](#3135_views)
 - [3.2. Front-End](#32_front-end)
-
  
-
 # 1. Motivations <a name = "1_motivations"></a>
 
 The main motivation of this project was to understand how WebSocket could add value to a web application with Django by creating a real-time communication channel with the presentation layer.
@@ -232,7 +231,7 @@ Below I describe the main consumer methods and their purpose.
 
 - `urlpatterns`: Defines the patterns for the HTTP request routes and their corresponding views.
 
-### 3.5. back/markdownchat/chat/views.py
+#### 3.1.3.5. back/markdownchat/chat/views.py <a name = "3135_views"></a>
 
 - `def get_signed_user`: Returns `true` if the requested user is already logged into a specific room and `false` if not. This endpoint is used so that the presentation layer can avoid two users with the same `username` in the same room.
 
