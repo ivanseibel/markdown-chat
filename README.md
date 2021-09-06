@@ -54,6 +54,7 @@
     - [3.2.1.1. Install Dependencies](#3211_install_dependencies)
       - [Let's talk about Create React App](#lets_talk_about_create_react_app)
       - [Node and npm](#node_and_npm)
+      - [Installing Javascript libraries](#installing_javascript_libraries)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -276,7 +277,7 @@ But if don't want to use a version manager for `Node`, you can install it using 
 
 And the last recommendation is to don't use `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
 
-#### 1.1.3. Installing Javascript libraries
+**Installing Javascript libraries** <a name = "installing_javascript_libraries"></a>
 
 Now you are able to install all Javascript dependencies for your project.
 
