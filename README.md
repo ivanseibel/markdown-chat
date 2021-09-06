@@ -53,6 +53,7 @@
   - [3.2.1. How to Run](#321_how_to_run)
     - [3.2.1.1. Install Dependencies](#3211_install_dependencies)
       - [Let's talk about Create React App](#lets_talk_about_create_react_app)
+      - [Node and npm](#node_and_npm)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -265,7 +266,7 @@ According to the [official React JS website](https://reactjs.org/docs/create-a-n
 
 You don't have to use again `create-react-app` script on this project but, as you can see above, you'll need `Node` and `npm` to run in development mode and to build the files.
 
-#### 1.1.2. Node and npm
+**Node and npm** <a name = "node_and_npm"></a>
 
 If you already have `Node` on your operating system, you probably also have `npm` because it's part of the `Node` package.
 
