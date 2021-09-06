@@ -44,6 +44,7 @@
     - [3.1.3.1. back/markdownchat/chat/consumers.py](#3131_consumers)
       - [Database methods](#database_methods)
       - [Consumer methods](#consumer_methods)
+    - [3.1.3.2. back/markdownchat/chat/models.py](#3132_models)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -217,7 +218,7 @@ Below I describe the main consumer methods and their purpose.
   - Get the list of connected users at a specific room.
   - Send data to WebSocket.
     
-### 3.2. back/markdownchat/chat/models.py
+#### 3.1.3.2. back/markdownchat/chat/models.py <a name = "3132_models"></a>
 
 - `class SignedUser`: Defines the model for the table of connected users which is intended to keep an up-to-date list of all active users and rooms on the server.
 
