@@ -34,6 +34,8 @@
   - [3.1.1. How to Run](#311_how_to_run)
     - [3.1.1.1. Install Dependencies](#3111_install_dependencies)
     - [3.1.1.2. Configurations](#3112_configurations)
+    - [3.1.1.3. Migrations](#3113_migrations)
+    - [3.1.1.4. Run the Server](#3114_run_the_server)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -93,7 +95,7 @@ To install all of the dependencies you just have to run the following command us
 
 For security reasons I'm using .env files to the save secret key during programming time and the library that provides access to environment variables is `python-decouple`. You can rename file `.env.template` to `.env` and then put your security key inside and your Django app will be able to read it.
 
-### 1.3. Migrations
+### 3.1.1.3. Migrations <a name = "3113_migrations"></a>
 
 The next step is create the SQLite database and its entities using [Django Migrations](https://docs.djangoproject.com/en/3.2/topics/migrations/).
 
@@ -104,7 +106,7 @@ To do this, just run the following commands on your terminal inside the folder `
 # python3 manage.py migrate
 ```
 
-### 1.4. Run the Server
+### 3.1.1.4. Run the Server <a name = "3114_run_the_server"></a>
 
 Right now you'll be able to run the server to get your app ready to receive new connections.
 
