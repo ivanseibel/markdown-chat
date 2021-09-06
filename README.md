@@ -29,6 +29,7 @@
   - [1.1. Back-End](#11_back-end)
   - [1.2. Front-End](#12_front-end)
 - [2. Main Features](#2_main_features)
+- [3. Architectural Detailing](#3_architectural_detailing)
 
 ## 1. Motivations <a name = "1_motivations"></a>
 
@@ -61,7 +62,7 @@ Instead of starting with a Javascript application "from scratch", the presentati
 9. Users can send the message Ctrl+Enter or by clicking the Send button.
 10. Responsive design following the "mobile-first" paradigm.
 
-# Architectural Detailing
+# 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
 
 [Back-End](https://github.com/ivanseibel/markdown-chat/blob/main/back/markdownchat/README.md)
 
