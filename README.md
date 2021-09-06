@@ -56,6 +56,7 @@
       - [Node and npm](#node_and_npm)
       - [Installing Javascript libraries](#installing_javascript_libraries)
       - [Environment variables](#environment_variables)
+      - [Run the project](#run_the_project)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -294,7 +295,7 @@ If you are running this project locally, the environment variables can be set vi
 
 If you are in a production environment, just create the variables in the service that will provide access to the project, build the files and the variables will be automatically injected into the Javascript files.
 
-#### 1.1.5. Run the project
+**Run the project** <a name = "run_the_project"></a>
 
 You're ready to go.
 
