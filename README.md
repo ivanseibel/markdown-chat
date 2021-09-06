@@ -55,6 +55,7 @@
       - [Let's talk about Create React App](#lets_talk_about_create_react_app)
       - [Node and npm](#node_and_npm)
       - [Installing Javascript libraries](#installing_javascript_libraries)
+      - [Environment variables](#environment_variables)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -285,7 +286,7 @@ Now you are able to install all Javascript dependencies for your project.
 # npm install
 ```
 
-#### 1.1.4. Environment variables
+**Environment variables** <a name = "environment_variables"></a>
 
 One of the advantages of using the `create-react-app` script is that it allows us to custom inject variables configured in the server environment. In this project I'm using an environment variable to store the base url for HTTP requests and also for WebSocket connections.
 
