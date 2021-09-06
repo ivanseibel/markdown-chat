@@ -30,6 +30,10 @@
   - [1.2. Front-End](#12_front-end)
 - [2. Main Features](#2_main_features)
 - [3. Architectural Detailing](#3_architectural_detailing)
+- [3.1. Back-End](#31_back-end)
+- [3.2. Front-End](#32_front-end)
+
+ 
 
 ## 1. Motivations <a name = "1_motivations"></a>
 
@@ -64,6 +68,10 @@ Instead of starting with a Javascript application "from scratch", the presentati
 
 ## 3. Architectural Detailing <a name = "3_architectural_detailing"></a>
 
+### 3.1. Back-End <a name = "31_back-end"></a>
+
 [Back-End](https://github.com/ivanseibel/markdown-chat/blob/main/back/markdownchat/README.md)
+
+### 3.2. Front-End <a name = "32_front-end"></a>
 
 [Front-End](https://github.com/ivanseibel/markdown-chat/tree/main/front/markdownchat/README.md)
