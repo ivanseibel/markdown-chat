@@ -51,6 +51,7 @@
     - [3.1.3.6. back/markdownchat/.env](#3136_env)
 - [3.2. Front-End](#32_front-end)
   - [3.2.1. How to Run](#321_how_to_run)
+    - [3.2.1.1. Install Dependencies](#3211_install_dependencies)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -249,7 +250,7 @@ In order for the application to be able to retrieve the environment variables it
 
 ### 3.2.1. How to Run <a name = "321_how_to_run"></a>
 
-### 1.1. Install Dependencies
+#### 3.2.1.1. Install Dependencies <a name = "3211_install_dependencies"></a>
 
 #### 1.1.1. Let's talk about Create React App
 
