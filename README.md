@@ -37,6 +37,7 @@
     - [3.1.1.3. Migrations](#3113_migrations)
     - [3.1.1.4. Run the Server](#3114_run_the_server)
   - [3.1.2. Main Technologies](#312_main_technologies)
+    - [3.1.2.1. HTTP Requests (Django)](#3121_http_requests_django)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -128,7 +129,7 @@ Quit the server with CONTROL-C.
 #### 3.1.2. Main Technologies <a name = "312_main_technologies"></a>
 
 Basically, the back-end layer depends of three main technologies to implement the needed services: HTTP Requests, WebSocket and a Database.
-### 2.1. HTTP Requests (Django)
+##### 3.1.2.1. HTTP Requests (Django) <a name = "3121_http_requests_django"></a>
 
 The first reason I adopted Django as a framework to develop this project was productivity. It's amazing how in just a few minutes you can have a working MVC application with very little code as soon as you install Django.
 
