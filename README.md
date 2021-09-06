@@ -31,6 +31,7 @@
 - [2. Main Features](#2_main_features)
 - [3. Architectural Detailing](#3_architectural_detailing)
 - [3.1. Back-End](#31_back-end)
+  - [3.1.1. How to Run](#31_back-end)
 - [3.2. Front-End](#32_front-end)
 
  
@@ -70,7 +71,22 @@ Instead of starting with a Javascript application "from scratch", the presentati
 
 ### 3.1. Back-End <a name = "31_back-end"></a>
 
-[Back-End](https://github.com/ivanseibel/markdown-chat/blob/main/back/markdownchat/README.md)
+#### 3.1.1. How to Run <a name = "31_back-end"></a>
+
+##### 3.1.1.1. Install Dependencies
+
+First of all you have to install python3 and pip to be able to run this project and install all of the dependencies.
+
+You'll find instructions to install python3 on your system at [https://www.python.org/download/releases/3.0/](https://www.python.org/download/releases/3.0/) and pip at [https://pip.pypa.io/en/stable/installation/](https://pip.pypa.io/en/stable/installation/).
+
+I'm using [venv](https://docs.python.org/3/library/venv.html) to virtualize my Python environment, but you're free to make your choice.
+
+To install all of the dependencies you just have to run the following command using pip and the requirements.txt file that contains all libs used by this project.
+
+```bash
+# pip install -r /path/to/requirements.txt
+```
+
 
 ### 3.2. Front-End <a name = "32_front-end"></a>
 
