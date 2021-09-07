@@ -77,6 +77,7 @@
     - [3.2.4.6. Users list can be hidden/unhidden](#3246_users_list_hidden_unhidden)
     - [3.2.4.7. Format text with Markdown](#3247_format_text_with_markdown)
     - [3.2.4.8. Messages with multiple lines](#3248_messages_with_multiple_lines)
+    - [3.2.4.9. Ctrl+Enter or button Send to send messages](#3249_ctrl_enter)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -518,7 +519,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.9. Users can send the message Ctrl+Enter or by clicking the Send button
+#### 3.2.4.9. Ctrl+Enter or button Send to send messages <a name = "3249_ctrl_enter"></a>
 
 <table>
   <tr>
