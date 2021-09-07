@@ -74,6 +74,7 @@
     - [3.2.4.3. Avoid user enter with username in use](#3243_avoid_username_in_use)
     - [3.2.4.4. Display a list of all logged users at room](#3244_display_logged_users)
     - [3.2.4.5. Show message when user leaves or enters room](#3245_show_leaves_enters)
+    - [3.2.4.6. Users list can be hidden/unhidden](#3246_users_list_hidden_unhidden)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -475,7 +476,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 3.2.4.5. Show message when user leaves or enters room <a name = "3245_show_leaves_enters"></a>
+#### 3.2.4.5. Show message when user leaves or enters room <a name = "3245_show_leaves_enters"></a>
 
 <table>
   <tr>
@@ -485,7 +486,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.6. The room user list can be hidden and unhidden
+#### 3.2.4.6. Users list can be hidden/unhidden <a name = "3246_users_list_hidden_unhidden"></a>
 
 <table>
   <tr>
