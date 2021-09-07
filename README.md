@@ -76,6 +76,7 @@
     - [3.2.4.5. Show message when user leaves or enters room](#3245_show_leaves_enters)
     - [3.2.4.6. Users list can be hidden/unhidden](#3246_users_list_hidden_unhidden)
     - [3.2.4.7. Format text with Markdown](#3247_format_text_with_markdown)
+    - [3.2.4.8. Messages with multiple lines](#3248_messages_with_multiple_lines)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -507,7 +508,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.8. Text input of messages allows writing on multiple lines
+### 3.2.4.8. Messages with multiple lines <a name = "3248_messages_with_multiple_lines"></a>
 
 <table>
   <tr>
