@@ -62,6 +62,7 @@
     - [3.2.2.3. CSS](#3223_css)
     - [3.2.2.4. WebSocket](#3224_websocket)
     - [3.2.2.5. Markdown](#3225_markdown)
+  - [3.2.3. Details About the Code](#323_details_about_the_code)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -373,7 +374,7 @@ If you want to better understand what you can do with these two libraries, I rec
 - [react-markdown](https://github.com/remarkjs/react-markdown)
 - [remark](https://github.com/remarkjs/remark)
 
-## 3. Details About the Code
+### 3.2.3. Details About the Code <a name = "323_details_about_the_code"></a>
 
 ### 3.1. Context
 
