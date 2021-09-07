@@ -57,6 +57,7 @@
     - [3.2.1.4. Environment variables](#3214_environment_variables)
     - [3.2.1.5. Run the project](#3215_run_the_project)
   - [3.2.2. Main Technologies](#322_main_technologies)
+    - [3.2.2.1. Hooks](#3221_hooks)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -317,7 +318,7 @@ To create a production build, use npm run build.
 
 ### 3.2.2. Main Technologies <a name = "322_main_technologies"></a>
 
-### 2.1. Hooks
+#### 3.2.2.1. Hooks <a name = "3221_hooks"></a>
 
 After five years of the project, the React.js team realized that the use of classes brought some types of problems that hindered productivity, the reuse of components and even the learning curve for new developers (since Javascript `this` can have a concept somewhat different from other languages).
 
