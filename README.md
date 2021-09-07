@@ -58,6 +58,7 @@
     - [3.2.1.5. Run the project](#3215_run_the_project)
   - [3.2.2. Main Technologies](#322_main_technologies)
     - [3.2.2.1. Hooks](#3221_hooks)
+    - [3.2.2.2. Context API](#3222_context_api)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -326,7 +327,7 @@ With the creation of version 16.8 a new paradigm called Hooks was introduced tha
 
 You can still program in React by classes, but there is a global trend of projects moving to the hook-based model and, after all, who am I to question the motives of the team that maintains the React.js project :smiley:
 
-### 2.2. Context API
+#### 3.2.2.2. Context API <a name = "3222_context_api"></a>
 
 In general terms, we can say that the main feature of the Context API is to offer the possibility to share states globally within the component tree.
 
