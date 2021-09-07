@@ -68,6 +68,9 @@
     - [3.2.3.3. front/markdownchat/src/services/api.js](#3233_api)
     - [3.2.3.4. front/markdownchat/src/ui/pages/home/Home.page.jsx](#3234_home_page)
     - [3.2.3.5. front/markdownchat/src/ui/pages/room/Room.page.jsx](#3235_room_page)
+  - [3.2.4. Short Captures of Key Features](#324_short_captures_of_key_features)
+    - [3.2.4.1. Real-time communication using WebSockets](#3241_real-time)
+    - [3.2.4.2. It's necessary to inform a username and the name of the room](#3242_username_room) 
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -427,9 +430,9 @@ The styles that color and beautify this page are available in a `styles.css` fil
   - `signedUser`: username who is connected.
   - `usersList`: users name list.
 
-## 4. Short Captures of Key Features
+### 3.2.4. Short Captures of Key Features <a name = "324_short_captures_of_key_features"></a>
 
-### 4.1. Real-time communication using WebSockets
+#### 3.2.4.1. Real-time communication using WebSockets <a name = "3241_real-time"></a>
 
 <table>
   <tr>
@@ -439,7 +442,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.2. To access a room it is necessary to inform a username and the name of the room
+### 3.2.4.2. It's necessary to inform a username and the name of the room <a name = "3242_username_room"></a>
 
 <table>
   <tr>
