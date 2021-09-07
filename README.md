@@ -59,6 +59,7 @@
   - [3.2.2. Main Technologies](#322_main_technologies)
     - [3.2.2.1. Hooks](#3221_hooks)
     - [3.2.2.2. Context API](#3222_context_api)
+    -[3.2.2.3. CSS](#3223_css)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -339,7 +340,7 @@ In this project, I chose to use a context to centralize the states related to th
 
 Adopting centralized state management with the Context API allowed route control with `react-router-dom` to perform user redirection automatically according to the state of the WebSocket. In addition, the `home` and `room` pages can transparently access shared methods and states as if they were implemented within those pages.
 
-### 2.3. CSS
+#### 3.2.2.3. CSS <a name = "3223_css"></a>
 
 Well, in my original idea I imagined using some kind of framework, market design system or some React library for functional styles in order to save time, but as soon as I started working I realized that one of the most fun parts would be building the styles a from total zero.
 
