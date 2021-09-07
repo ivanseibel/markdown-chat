@@ -57,6 +57,7 @@
       - [Installing Javascript libraries](#installing_javascript_libraries)
       - [Environment variables](#environment_variables)
       - [Run the project](#run_the_project)
+  - [3.2.2. Main Technologies](#322_main_technologies)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -317,7 +318,7 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
 
-## 2. Main Technologies
+### 3.2.2. Main Technologies <a name = "322_main_technologies"></a>
 
 ### 2.1. Hooks
 
