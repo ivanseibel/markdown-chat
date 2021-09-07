@@ -73,6 +73,7 @@
     - [3.2.4.2. It's necessary to inform a username and the name of the room](#3242_username_room) 
     - [3.2.4.3. Avoid user enter with username in use](#3243_avoid_username_in_use)
     - [3.2.4.4. Display a list of all logged users at room](#3244_display_logged_users)
+    - [3.2.4.5. Show message when user leaves or enters room](#3245_show_leaves_enters)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -474,7 +475,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.5. When a new user enters or leaves the room, a message is displayed on the timeline
+### 3.2.4.5. Show message when user leaves or enters room <a name = "3245_show_leaves_enters"></a>
 
 <table>
   <tr>
