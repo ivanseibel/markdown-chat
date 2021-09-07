@@ -78,6 +78,7 @@
     - [3.2.4.7. Format text with Markdown](#3247_format_text_with_markdown)
     - [3.2.4.8. Messages with multiple lines](#3248_messages_with_multiple_lines)
     - [3.2.4.9. Ctrl+Enter or button Send to send messages](#3249_ctrl_enter)
+    - [3.2.4.10. Responsive "mobile-first" design](#32410_responsive_design)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -529,7 +530,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.10. Responsive design following the "mobile-first" paradigm
+#### 3.2.4.10. Responsive "mobile-first" design <a name = "32410_responsive_design"></a>
 
 <table>
   <tr>
