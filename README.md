@@ -67,6 +67,7 @@
     - [3.2.3.2. front/markdownchat/src/routes/index.jsx](#3232_index)
     - [3.2.3.3. front/markdownchat/src/services/api.js](#3233_api)
     - [3.2.3.4. front/markdownchat/src/ui/pages/home/Home.page.jsx](#3234_home_page)
+    - [3.2.3.5. front/markdownchat/src/ui/pages/room/Room.page.jsx](#3235_room_page)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -406,7 +407,7 @@ Implements the user input screen where he can enter a username and the name of t
 The styles that color and beautify this page are available in a `styles.css` file which is present in the same folder as the `Home.page.jsx` page.
 
 
-#### 3.4.2. front/markdownchat/src/ui/pages/room/Room.page.jsx
+#### 3.2.3.5. front/markdownchat/src/ui/pages/room/Room.page.jsx <a name = "3235_room_page"></a>
 
 Implements the chat room where a logged in user can see who the other users are and send messages to the room using plain text or text with Markdown syntax (and emojis :smile:).
 
