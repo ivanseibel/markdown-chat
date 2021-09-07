@@ -63,6 +63,7 @@
     - [3.2.2.4. WebSocket](#3224_websocket)
     - [3.2.2.5. Markdown](#3225_markdown)
   - [3.2.3. Details About the Code](#323_details_about_the_code)
+    - [3.2.3.1. front/markdownchat/src/context/room/Room.context.jsx](#3231_room_context)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -376,9 +377,7 @@ If you want to better understand what you can do with these two libraries, I rec
 
 ### 3.2.3. Details About the Code <a name = "323_details_about_the_code"></a>
 
-### 3.1. Context
-
-#### 3.1.1 front/markdownchat/src/context/room/Room.context.jsx
+#### 3.2.3.1. front/markdownchat/src/context/room/Room.context.jsx <a name = "3231_room_context"></a>
 
 A React Context that is responsible for providing the methods, states and status that allow managing the WebSocket in a centralized way from anywhere in the application. From this context we can also make HTTP requests to retrieve important information about users, rooms, etc.
 
