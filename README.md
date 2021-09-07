@@ -75,6 +75,7 @@
     - [3.2.4.4. Display a list of all logged users at room](#3244_display_logged_users)
     - [3.2.4.5. Show message when user leaves or enters room](#3245_show_leaves_enters)
     - [3.2.4.6. Users list can be hidden/unhidden](#3246_users_list_hidden_unhidden)
+    - [3.2.4.7. Format text with Markdown](#3247_format_text_with_markdown)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -496,7 +497,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.7. Users can format text using Markdown syntax
+#### 3.2.4.7. Format text with Markdown <a name = "3247_format_text_with_markdown"></a>
 
 <table>
   <tr>
