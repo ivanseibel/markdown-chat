@@ -61,6 +61,7 @@
     - [3.2.2.2. Context API](#3222_context_api)
     - [3.2.2.3. CSS](#3223_css)
     - [3.2.2.4. WebSocket](#3224_websocket)
+    - [3.2.2.5. Markdown](#3225_markdown)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -357,7 +358,7 @@ In this project, I chose to use a library called `react-use-websocket` which use
 
 Next, in the code detail, I'll make a more detailed explanation on how I used this library to integrate WebSocket's status, methods and events with the chat system.
 
-### 2.5. Markdown
+#### 3.2.2.5. Markdown <a name = "3225_markdown"></a>
 
 Originally the idea was that messages would be exchanged using only plain text without formatting, the main objective would be just to demonstrate communication using WebSocket with a web application. While building and testing the web client I realized that it could be a lot more fun to make and use if you could use text formatting and other cool features in the messages. After a quick search, Markdown was the best answer I could find for this need.
 
