@@ -66,6 +66,7 @@
     - [3.2.3.1. front/markdownchat/src/context/room/Room.context.jsx](#3231_room_context)
     - [3.2.3.2. front/markdownchat/src/routes/index.jsx](#3232_index)
     - [3.2.3.3. front/markdownchat/src/services/api.js](#3233_api)
+    - [3.2.3.4. front/markdownchat/src/ui/pages/home/Home.page.jsx](#3234_home_page)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -396,9 +397,7 @@ Responsible for automatically redirecting the user between home and chat room sc
 
 Create an instance of axios so that it can be shared with the application. axios is responsible for providing an abstraction of the [Fetch API](https://www.w3schools.com/js/js_api_fetch.asp), adding improvements and extra functionality.
 
-### 3.4. UI
-
-#### 3.4.1. front/markdownchat/src/ui/pages/home/Home.page.jsx
+#### 3.2.3.4. front/markdownchat/src/ui/pages/home/Home.page.jsx <a name = "3234_home_page"></a>
 
 Implements the user input screen where he can enter a username and the name of the room he wants to connect to. The method of connecting to the room is provided by the context described above.
 
