@@ -51,12 +51,11 @@
     - [3.1.3.6. back/markdownchat/.env](#3136_env)
 - [3.2. Front-End](#32_front-end)
   - [3.2.1. How to Run](#321_how_to_run)
-    - [3.2.1.1. Install Dependencies](#3211_install_dependencies)
-      - [Let's talk about Create React App](#lets_talk_about_create_react_app)
-      - [Node and npm](#node_and_npm)
-      - [Installing Javascript libraries](#installing_javascript_libraries)
-      - [Environment variables](#environment_variables)
-      - [Run the project](#run_the_project)
+    - [3.2.1.1. Let's talk about Create React App](#3211_lets_talk_about_create_react_app)
+    - [3.2.1.2. Node and npm](#3212_node_and_npm)
+    - [3.2.1.3. Installing Javascript libraries](#3213_installing_javascript_libraries)
+    - [3.2.1.4. Environment variables](#3214_environment_variables)
+    - [3.2.1.5. Run the project](#3215_run_the_project)
   - [3.2.2. Main Technologies](#322_main_technologies)
  
 # 1. Motivations <a name = "1_motivations"></a>
@@ -256,9 +255,7 @@ In order for the application to be able to retrieve the environment variables it
 
 ### 3.2.1. How to Run <a name = "321_how_to_run"></a>
 
-#### 3.2.1.1. Install Dependencies <a name = "3211_install_dependencies"></a>
-
-**Let's talk about Create React App** <a name = "lets_talk_about_create_react_app"></a>
+#### 3.2.1.1. Let's talk about Create React App <a name = "3211_lets_talk_about_create_react_app"></a>
 
 This project was created using the `create-react-app` script to gain some time and productivity in its construction.
 
@@ -270,7 +267,7 @@ According to the [official React JS website](https://reactjs.org/docs/create-a-n
 
 You don't have to use again `create-react-app` script on this project but, as you can see above, you'll need `Node` and `npm` to run in development mode and to build the files.
 
-**Node and npm** <a name = "node_and_npm"></a>
+#### 3.2.1.2. Node and npm <a name = "3212_node_and_npm"></a>
 
 If you already have `Node` on your operating system, you probably also have `npm` because it's part of the `Node` package.
 
@@ -280,7 +277,7 @@ But if don't want to use a version manager for `Node`, you can install it using 
 
 And the last recommendation is to don't use `Current` version of `Node`, `LTS` is the best choice to avoid problems with incompatibilities and other kind of issues that we usually have to deal with non stable versions.
 
-**Installing Javascript libraries** <a name = "installing_javascript_libraries"></a>
+#### 3.2.1.3. Installing Javascript libraries <a name = "3213_installing_javascript_libraries"></a>
 
 Now you are able to install all Javascript dependencies for your project.
 
@@ -288,7 +285,7 @@ Now you are able to install all Javascript dependencies for your project.
 # npm install
 ```
 
-**Environment variables** <a name = "environment_variables"></a>
+#### 3.2.1.4. Environment variables <a name = "3214_environment_variables"></a>
 
 One of the advantages of using the `create-react-app` script is that it allows us to custom inject variables configured in the server environment. In this project I'm using an environment variable to store the base url for HTTP requests and also for WebSocket connections.
 
@@ -296,7 +293,7 @@ If you are running this project locally, the environment variables can be set vi
 
 If you are in a production environment, just create the variables in the service that will provide access to the project, build the files and the variables will be automatically injected into the Javascript files.
 
-**Run the project** <a name = "run_the_project"></a>
+#### 3.2.1.5. Run the project <a name = "3215_run_the_project"></a>
 
 You're ready to go.
 
