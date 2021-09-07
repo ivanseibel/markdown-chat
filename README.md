@@ -71,6 +71,8 @@
   - [3.2.4. Short Captures of Key Features](#324_short_captures_of_key_features)
     - [3.2.4.1. Real-time communication using WebSockets](#3241_real-time)
     - [3.2.4.2. It's necessary to inform a username and the name of the room](#3242_username_room) 
+    - [3.2.4.3. Avoid user enter with username in use](#3243_avoid_username_in_use)
+    - [3.2.4.4. Display a list of all logged users at room](#3244_display_logged_users)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -442,7 +444,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 3.2.4.2. It's necessary to inform a username and the name of the room <a name = "3242_username_room"></a>
+#### 3.2.4.2. It's necessary to inform a username and the name of the room <a name = "3242_username_room"></a>
 
 <table>
   <tr>
@@ -452,7 +454,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.3. A room cannot contain more than one user with the same name
+#### 3.2.4.3. Avoid user enter with username in use <a name = "3243_avoid_username_in_use"></a>
 
 <table>
   <tr>
@@ -462,7 +464,7 @@ The styles that color and beautify this page are available in a `styles.css` fil
   </tr>
 </table>
 
-### 4.4. The room should display a list of all users who are logged in there
+#### 3.2.4.4. Display a list of all logged users at room <a name = "3244_display_logged_users"></a>
 
 <table>
   <tr>
