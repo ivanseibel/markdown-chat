@@ -60,6 +60,7 @@
     - [3.2.2.1. Hooks](#3221_hooks)
     - [3.2.2.2. Context API](#3222_context_api)
     - [3.2.2.3. CSS](#3223_css)
+    - [3.2.2.4. WebSocket](#3224_websocket)
  
 # 1. Motivations <a name = "1_motivations"></a>
 
@@ -348,7 +349,7 @@ From there, the design of this project was built using exclusively pure CSS with
 
 Unfortunately time didn't allow me to work on prototype screens before starting development, so the design was thought out and implemented directly in the code with the idea of prioritizing ease of use and minimalism of the UI.
 
-### 2.4. WebSocket
+#### 3.2.2.4. WebSocket <a name = "3224_websocket"></a>
 
 Through the WebSocket object, Javascript offers us a complete API to communicate with the server with all the attributes, methods and events that we could possibly need. Implementing a client application with WebSocket is not complex and relies on a few flows, to understand it better you might want to take a look at the documentation provided by Mozilla [here](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications).
 
