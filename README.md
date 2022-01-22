@@ -84,7 +84,7 @@
 
 The main motivation of this project was to understand how WebSocket could add value to a web application with Django by creating a real-time communication channel with the presentation layer.
 
-As a result, the presentation layer was separated from Django and implemented as a SPA (Single Page Application) to demonstrate how this kind of real communication takes place in this architectural model.
+As a result, the presentation layer was separated from Django and implemented as a SPA (Single Page Application) to demonstrate how this kind of real-time communication takes place in this architectural model.
 
 ## 1.1. Back-End <a name = "11_back-end"></a>
 
